@@ -21,6 +21,10 @@
     "./*": "./*"
   },
   "style": "./index.css",
+  "files": [
+    "index.js",
+    "index.css"
+  ],
   "scripts": {
     "clean": "run-p \"clean:*\"",
     "clean:dist": "del-cli index.js index.css",
