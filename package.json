@@ -1,6 +1,6 @@
 {
   "name": "html-ua-styles",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "User agent stylesheet defined in the WHATWG HTML specification.",
   "homepage": "https://github.com/prettier/html-ua-styles#readme",
   "bugs": {
