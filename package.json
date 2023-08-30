@@ -1,12 +1,13 @@
 {
-  "name": "@prettier/html-styles",
+  "name": "html-ua-styles",
   "version": "0.0.0",
-  "homepage": "https://github.com/fisker/@prettier/html-styles#readme",
+"description": "User agent stylesheet defined in the WHATWG HTML specification.",
+  "homepage": "https://github.com/prettier/html-ua-styles#readme",
   "bugs": {
-    "url": "https://github.com/fisker/@prettier/html-styles/issues"
+    "url": "https://github.com/prettier/html-styles/issues"
   },
-  "repository": "prettier/html-styles",
-  "funding": "https://github.com/fisker/@prettier/html-styles?sponsor=1",
+  "repository": "prettier/html-ua-styles",
+  "funding": "https://github.com/prettier/html-ua-styles?sponsor=1",
   "license": "MIT",
   "author": {
     "name": "fisker Cheung",

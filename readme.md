@@ -1,4 +1,4 @@
-# @prettier/html-ua-styles
+# html-ua-styles
 
 [![Build Status][github_actions_badge]][github_actions_link]
 [![Coverage][codecov_badge]][codecov_link]
@@ -11,21 +11,21 @@
 [codecov_link]: https://codecov.io/gh/prettier/html-ua-styles
 [license_badge]: https://img.shields.io/npm/l/@prettier/html-ua-styles.svg?style=flat-square
 [license_link]: https://github.com/prettier/html-ua-styles/blob/main/license
-[package_version_badge]: https://img.shields.io/npm/v/@prettier/html-ua-styles.svg?style=flat-square
+[package_version_badge]: https://img.shields.io/npm/v/html-ua-styles.svg?style=flat-square
 [package_link]: https://www.npmjs.com/package/@prettier/html-ua-styles
 
->
+> User agent stylesheet defined in [the WHATWG HTML specification](https://html.spec.whatwg.org/).
 
 ## Installation
 
 ```sh
-yarn add @prettier/html-ua-styles
+yarn add html-ua-styles
 ```
 
 ## Usage
 
 ```js
-import htmlUaStyles from '@prettier/html-ua-styles';
+import htmlUaStyles from 'html-ua-styles';
 
 console.log(htmlUaStyles);
 /* =>
@@ -39,3 +39,7 @@ console.log(htmlUaStyles);
 ]
 */
 ```
+
+---
+
+Inspired by [`html-styles`](https://github.com/marionebl/html-styles)
