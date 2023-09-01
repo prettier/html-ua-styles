@@ -9,10 +9,10 @@
 [github_actions_link]: https://github.com/prettier/html-ua-styles/actions?query=branch%3Amain
 [codecov_badge]: https://codecov.io/gh/prettier/html-ua-styles/branch/main/graph/badge.svg?token=Cvu6qhcepg
 [codecov_link]: https://codecov.io/gh/prettier/html-ua-styles
-[license_badge]: https://img.shields.io/npm/l/@prettier/html-ua-styles.svg?style=flat-square
+[license_badge]: https://img.shields.io/npm/l/html-ua-styles.svg?style=flat-square
 [license_link]: https://github.com/prettier/html-ua-styles/blob/main/license
 [package_version_badge]: https://img.shields.io/npm/v/html-ua-styles.svg?style=flat-square
-[package_link]: https://www.npmjs.com/package/@prettier/html-ua-styles
+[package_link]: https://www.npmjs.com/package/html-ua-styles
 
 > User agent stylesheet defined in [the WHATWG HTML specification](https://html.spec.whatwg.org/).
 
