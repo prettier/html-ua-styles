@@ -27,7 +27,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['[hidden]:not([hidden=until-found i])'],
+    selectors: ['[hidden]:not([hidden=until-found i]):not(embed)'],
     styles: [
       {
         property: 'display',

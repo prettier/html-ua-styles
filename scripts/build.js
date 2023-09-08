@@ -48,11 +48,10 @@ async function build() {
   const text = await getStyles();
   const stylesheet = new Stylesheet(text);
 
-  await writePrettierFile(STYLE_FILE, text, { parser: 'css' });
+  await writePrettierFile(STYLE_FILE, text);
   await writePrettierFile(
     SCRIPT_FILE,
     `export default ${JSON.stringify(stylesheet, undefined, 2)};`,
-    { parser: 'meriyah' },
   );
 }
 

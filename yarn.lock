@@ -1057,22 +1057,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"del-cli@npm:5.0.1":
-  version: 5.0.1
-  resolution: "del-cli@npm:5.0.1"
+"del-cli@npm:5.1.0":
+  version: 5.1.0
+  resolution: "del-cli@npm:5.1.0"
   dependencies:
-    del: ^7.0.0
+    del: ^7.1.0
     meow: ^10.1.3
   bin:
     del: cli.js
     del-cli: cli.js
-  checksum: bc6bc9d37e2b0eaa3c4ba1c38f85bceb26ba4d7524c0e823b9a32d8a0ee02d1612821fcc136a8c0590ba6f4ebea314cde1d87d443e7554f5ade86939e2b7eec6
+  checksum: 7a8953d3d22716d08080d7344ce9b66fe1608ac4aa32b6106ba825eb986ed2a31ba7826c2f269a2060f013885274c8935628bb6009336adc29a36413dc660741
   languageName: node
   linkType: hard
 
-"del@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "del@npm:7.0.0"
+"del@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "del@npm:7.1.0"
   dependencies:
     globby: ^13.1.2
     graceful-fs: ^4.2.10
@@ -1082,7 +1082,7 @@ __metadata:
     p-map: ^5.5.0
     rimraf: ^3.0.2
     slash: ^4.0.0
-  checksum: 33e5077f18b5dfbe81971d1f8a2cd8bf676dd5ede491bab85ec17a4a1d59001bd3ec47fd38e9a4ae01a3c98c07b98c7b3dc56190b86d88926798802d7858d827
+  checksum: 93527e78e95125809ff20a112814b00648ed64af204be1a565862698060c9ec8f5c5fe1a4866725acfde9b0da6423f4b7a7642c1d38cd4b05cbeb643a7b089e3
   languageName: node
   linkType: hard
 
@@ -2054,7 +2054,7 @@ __metadata:
     "@fisker/prettier-config": 5.1.1
     cheerio: 1.0.0-rc.12
     css-tree: 2.3.1
-    del-cli: 5.0.1
+    del-cli: 5.1.0
     eslint: 8.48.0
     husky: 8.0.3
     lint-staged: 14.0.1
@@ -2062,7 +2062,7 @@ __metadata:
     npm-run-all: 4.1.5
     prettier: 3.0.3
     sort-package-json: 2.5.1
-    write-prettier-file: 3.0.2
+    write-prettier-file: 3.0.3
   languageName: unknown
   linkType: soft
 
@@ -3276,22 +3276,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-format@npm:3.2.3":
-  version: 3.2.3
-  resolution: "prettier-format@npm:3.2.3"
+"prettier-format@npm:4.0.0":
+  version: 4.0.0
+  resolution: "prettier-format@npm:4.0.0"
   dependencies:
     import-meta-resolve: 3.0.0
-    prettier: 3.0.0
-  checksum: 4cf2e4ad4076bf829af3805960318408b2ba77b1093e0811b500ff18f02fde1069ad1efe07b46ed16be7e7c1e706abf316e7cef292b0354ea45e29717d4c722b
-  languageName: node
-  linkType: hard
-
-"prettier@npm:3.0.0":
-  version: 3.0.0
-  resolution: "prettier@npm:3.0.0"
-  bin:
-    prettier: bin/prettier.cjs
-  checksum: 6a832876a1552dc58330d2467874e5a0b46b9ccbfc5d3531eb69d15684743e7f83dc9fbd202db6270446deba9c82b79d24383d09924c462b457136a759425e33
+    prettier: 3.0.3
+    url-or-path: 2.1.0
+  checksum: 37b0b3c904175615606cb46d87b074e076aa5a97e21d9de840add84ce0f7ca1a67a7c66c9303c5ee2065abc18e11831abd1cb9dae99f09f9e101bda7f451ecb7
   languageName: node
   linkType: hard
 
@@ -4123,13 +4115,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"write-prettier-file@npm:3.0.2":
-  version: 3.0.2
-  resolution: "write-prettier-file@npm:3.0.2"
+"write-prettier-file@npm:3.0.3":
+  version: 3.0.3
+  resolution: "write-prettier-file@npm:3.0.3"
   dependencies:
-    prettier-format: 3.2.3
+    prettier-format: 4.0.0
     url-or-path: 2.1.0
-  checksum: 1df5d32ca2f32de509b4743f1e8ebfca144fa3bf8594632d5ecdce2ef2f308200c2c0f2c04789563c63d3540a37cfeb1d3887c0849f2e69bf1a6c9d5071e9d6f
+  checksum: 584dacc6b86450245035a884f2d325d097aeb74a7bf70142e2e7b49c70c4bd403d7dc9840a9c8b27cf85bd9a39a2b45d143ae205fc9e8d9930d0ed393d1037ae
   languageName: node
   linkType: hard
 

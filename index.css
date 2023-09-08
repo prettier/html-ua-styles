@@ -16,7 +16,7 @@ title {
   display: none;
 }
 
-[hidden]:not([hidden='until-found' i]) {
+[hidden]:not([hidden='until-found' i]):not(embed) {
   display: none;
 }
 
