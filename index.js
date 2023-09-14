@@ -27,7 +27,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['[hidden]:not([hidden=until-found i]):not(embed)'],
+    selectors: ['[hidden]:not([hidden="until-found" i]):not(embed)'],
     styles: [
       {
         property: 'display',
@@ -37,7 +37,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['[hidden=until-found i]:not(embed)'],
+    selectors: ['[hidden="until-found" i]:not(embed)'],
     styles: [
       {
         property: 'content-visibility',
@@ -65,7 +65,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['input[type=hidden i]'],
+    selectors: ['input[type="hidden" i]'],
     styles: [
       {
         property: 'display',
@@ -663,7 +663,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['br[clear=left i]'],
+    selectors: ['br[clear="left" i]'],
     styles: [
       {
         property: 'clear',
@@ -673,7 +673,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['br[clear=right i]'],
+    selectors: ['br[clear="right" i]'],
     styles: [
       {
         property: 'clear',
@@ -683,7 +683,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['br[clear=all i]', 'br[clear=both i]'],
+    selectors: ['br[clear="all" i]', 'br[clear="both" i]'],
     styles: [
       {
         property: 'clear',
@@ -693,7 +693,11 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['[dir]:dir(ltr)', 'bdi:dir(ltr)', 'input[type=tel i]:dir(ltr)'],
+    selectors: [
+      '[dir]:dir(ltr)',
+      'bdi:dir(ltr)',
+      'input[type="tel" i]:dir(ltr)',
+    ],
     styles: [
       {
         property: 'direction',
@@ -764,9 +768,9 @@ export default [
       'li',
       'bdi',
       'output',
-      '[dir=ltr i]',
-      '[dir=rtl i]',
-      '[dir=auto i]',
+      '[dir="ltr" i]',
+      '[dir="rtl" i]',
+      '[dir="auto" i]',
     ],
     styles: [
       {
@@ -788,9 +792,9 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'input[dir=auto i]:is([type=search i], [type=tel i], [type=url i],\n[type=email i])',
-      'textarea[dir=auto i]',
-      'pre[dir=auto i]',
+      'input[dir="auto" i]:is([type="search" i], [type="tel" i], [type="url" i], [type="email" i])',
+      'textarea[dir="auto" i]',
+      'pre[dir="auto" i]',
     ],
     styles: [
       {
@@ -850,9 +854,9 @@ export default [
       'ol',
       'ul',
       'li',
-      '[dir=ltr i]',
-      '[dir=rtl i]',
-      '[dir=auto i]',
+      '[dir="ltr" i]',
+      '[dir="rtl" i]',
+      '[dir="auto" i]',
       '*|*',
     ],
     styles: [
@@ -865,7 +869,7 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'input:not([type=submit i]):not([type=reset i]):not([type=button i])',
+      'input:not([type="submit" i]):not([type="reset" i]):not([type="button" i])',
       'textarea',
     ],
     styles: [
@@ -1255,7 +1259,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['ol[type=a s]', 'li[type=a s]'],
+    selectors: ['ol[type="a" s]', 'li[type="a" s]'],
     styles: [
       {
         property: 'list-style-type',
@@ -1265,7 +1269,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['ol[type=A s]', 'li[type=A s]'],
+    selectors: ['ol[type="A" s]', 'li[type="A" s]'],
     styles: [
       {
         property: 'list-style-type',
@@ -1275,7 +1279,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['ol[type=i s]', 'li[type=i s]'],
+    selectors: ['ol[type="i" s]', 'li[type="i" s]'],
     styles: [
       {
         property: 'list-style-type',
@@ -1285,7 +1289,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['ol[type=I s]', 'li[type=I s]'],
+    selectors: ['ol[type="I" s]', 'li[type="I" s]'],
     styles: [
       {
         property: 'list-style-type',
@@ -1295,7 +1299,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['ul[type=none i]', 'li[type=none i]'],
+    selectors: ['ul[type="none" i]', 'li[type="none" i]'],
     styles: [
       {
         property: 'list-style-type',
@@ -1305,7 +1309,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['ul[type=disc i]', 'li[type=disc i]'],
+    selectors: ['ul[type="disc" i]', 'li[type="disc" i]'],
     styles: [
       {
         property: 'list-style-type',
@@ -1315,7 +1319,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['ul[type=circle i]', 'li[type=circle i]'],
+    selectors: ['ul[type="circle" i]', 'li[type="circle" i]'],
     styles: [
       {
         property: 'list-style-type',
@@ -1325,7 +1329,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['ul[type=square i]', 'li[type=square i]'],
+    selectors: ['ul[type="square" i]', 'li[type="square" i]'],
     styles: [
       {
         property: 'list-style-type',
@@ -1525,60 +1529,60 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'table[rules=none i]',
-      'table[rules=groups i]',
-      'table[rules=rows i]',
-      'table[rules=cols i]',
-      'table[rules=all i]',
-      'table[frame=void i]',
-      'table[frame=above i]',
-      'table[frame=below i]',
-      'table[frame=hsides i]',
-      'table[frame=lhs i]',
-      'table[frame=rhs i]',
-      'table[frame=vsides i]',
-      'table[frame=box i]',
-      'table[frame=border i]',
-      'table[rules=none i] > tr > td',
-      'table[rules=none i] > tr > th',
-      'table[rules=groups i] > tr > td',
-      'table[rules=groups i] > tr > th',
-      'table[rules=rows i] > tr > td',
-      'table[rules=rows i] > tr > th',
-      'table[rules=cols i] > tr > td',
-      'table[rules=cols i] > tr > th',
-      'table[rules=all i] > tr > td',
-      'table[rules=all i] > tr > th',
-      'table[rules=none i] > thead > tr > td',
-      'table[rules=none i] > thead > tr > th',
-      'table[rules=groups i] > thead > tr > td',
-      'table[rules=groups i] > thead > tr > th',
-      'table[rules=rows i] > thead > tr > td',
-      'table[rules=rows i] > thead > tr > th',
-      'table[rules=cols i] > thead > tr > td',
-      'table[rules=cols i] > thead > tr > th',
-      'table[rules=all i] > thead > tr > td',
-      'table[rules=all i] > thead > tr > th',
-      'table[rules=none i] > tbody > tr > td',
-      'table[rules=none i] > tbody > tr > th',
-      'table[rules=groups i] > tbody > tr > td',
-      'table[rules=groups i] > tbody > tr > th',
-      'table[rules=rows i] > tbody > tr > td',
-      'table[rules=rows i] > tbody > tr > th',
-      'table[rules=cols i] > tbody > tr > td',
-      'table[rules=cols i] > tbody > tr > th',
-      'table[rules=all i] > tbody > tr > td',
-      'table[rules=all i] > tbody > tr > th',
-      'table[rules=none i] > tfoot > tr > td',
-      'table[rules=none i] > tfoot > tr > th',
-      'table[rules=groups i] > tfoot > tr > td',
-      'table[rules=groups i] > tfoot > tr > th',
-      'table[rules=rows i] > tfoot > tr > td',
-      'table[rules=rows i] > tfoot > tr > th',
-      'table[rules=cols i] > tfoot > tr > td',
-      'table[rules=cols i] > tfoot > tr > th',
-      'table[rules=all i] > tfoot > tr > td',
-      'table[rules=all i] > tfoot > tr > th',
+      'table[rules="none" i]',
+      'table[rules="groups" i]',
+      'table[rules="rows" i]',
+      'table[rules="cols" i]',
+      'table[rules="all" i]',
+      'table[frame="void" i]',
+      'table[frame="above" i]',
+      'table[frame="below" i]',
+      'table[frame="hsides" i]',
+      'table[frame="lhs" i]',
+      'table[frame="rhs" i]',
+      'table[frame="vsides" i]',
+      'table[frame="box" i]',
+      'table[frame="border" i]',
+      'table[rules="none" i] > tr > td',
+      'table[rules="none" i] > tr > th',
+      'table[rules="groups" i] > tr > td',
+      'table[rules="groups" i] > tr > th',
+      'table[rules="rows" i] > tr > td',
+      'table[rules="rows" i] > tr > th',
+      'table[rules="cols" i] > tr > td',
+      'table[rules="cols" i] > tr > th',
+      'table[rules="all" i] > tr > td',
+      'table[rules="all" i] > tr > th',
+      'table[rules="none" i] > thead > tr > td',
+      'table[rules="none" i] > thead > tr > th',
+      'table[rules="groups" i] > thead > tr > td',
+      'table[rules="groups" i] > thead > tr > th',
+      'table[rules="rows" i] > thead > tr > td',
+      'table[rules="rows" i] > thead > tr > th',
+      'table[rules="cols" i] > thead > tr > td',
+      'table[rules="cols" i] > thead > tr > th',
+      'table[rules="all" i] > thead > tr > td',
+      'table[rules="all" i] > thead > tr > th',
+      'table[rules="none" i] > tbody > tr > td',
+      'table[rules="none" i] > tbody > tr > th',
+      'table[rules="groups" i] > tbody > tr > td',
+      'table[rules="groups" i] > tbody > tr > th',
+      'table[rules="rows" i] > tbody > tr > td',
+      'table[rules="rows" i] > tbody > tr > th',
+      'table[rules="cols" i] > tbody > tr > td',
+      'table[rules="cols" i] > tbody > tr > th',
+      'table[rules="all" i] > tbody > tr > td',
+      'table[rules="all" i] > tbody > tr > th',
+      'table[rules="none" i] > tfoot > tr > td',
+      'table[rules="none" i] > tfoot > tr > th',
+      'table[rules="groups" i] > tfoot > tr > td',
+      'table[rules="groups" i] > tfoot > tr > th',
+      'table[rules="rows" i] > tfoot > tr > td',
+      'table[rules="rows" i] > tfoot > tr > th',
+      'table[rules="cols" i] > tfoot > tr > td',
+      'table[rules="cols" i] > tfoot > tr > th',
+      'table[rules="all" i] > tfoot > tr > td',
+      'table[rules="all" i] > tfoot > tr > th',
     ],
     styles: [
       {
@@ -1589,7 +1593,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[align=left i]'],
+    selectors: ['table[align="left" i]'],
     styles: [
       {
         property: 'float',
@@ -1599,7 +1603,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[align=right i]'],
+    selectors: ['table[align="right" i]'],
     styles: [
       {
         property: 'float',
@@ -1609,7 +1613,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[align=center i]'],
+    selectors: ['table[align="center" i]'],
     styles: [
       {
         property: 'margin-inline-start',
@@ -1624,12 +1628,12 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'thead[align=absmiddle i]',
-      'tbody[align=absmiddle i]',
-      'tfoot[align=absmiddle i]',
-      'tr[align=absmiddle i]',
-      'td[align=absmiddle i]',
-      'th[align=absmiddle i]',
+      'thead[align="absmiddle" i]',
+      'tbody[align="absmiddle" i]',
+      'tfoot[align="absmiddle" i]',
+      'tr[align="absmiddle" i]',
+      'td[align="absmiddle" i]',
+      'th[align="absmiddle" i]',
     ],
     styles: [
       {
@@ -1640,7 +1644,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['caption[align=bottom i]'],
+    selectors: ['caption[align="bottom" i]'],
     styles: [
       {
         property: 'caption-side',
@@ -1651,13 +1655,13 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'p[align=left i]',
-      'h1[align=left i]',
-      'h2[align=left i]',
-      'h3[align=left i]',
-      'h4[align=left i]',
-      'h5[align=left i]',
-      'h6[align=left i]',
+      'p[align="left" i]',
+      'h1[align="left" i]',
+      'h2[align="left" i]',
+      'h3[align="left" i]',
+      'h4[align="left" i]',
+      'h5[align="left" i]',
+      'h6[align="left" i]',
     ],
     styles: [
       {
@@ -1669,13 +1673,13 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'p[align=right i]',
-      'h1[align=right i]',
-      'h2[align=right i]',
-      'h3[align=right i]',
-      'h4[align=right i]',
-      'h5[align=right i]',
-      'h6[align=right i]',
+      'p[align="right" i]',
+      'h1[align="right" i]',
+      'h2[align="right" i]',
+      'h3[align="right" i]',
+      'h4[align="right" i]',
+      'h5[align="right" i]',
+      'h6[align="right" i]',
     ],
     styles: [
       {
@@ -1687,13 +1691,13 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'p[align=center i]',
-      'h1[align=center i]',
-      'h2[align=center i]',
-      'h3[align=center i]',
-      'h4[align=center i]',
-      'h5[align=center i]',
-      'h6[align=center i]',
+      'p[align="center" i]',
+      'h1[align="center" i]',
+      'h2[align="center" i]',
+      'h3[align="center" i]',
+      'h4[align="center" i]',
+      'h5[align="center" i]',
+      'h6[align="center" i]',
     ],
     styles: [
       {
@@ -1705,13 +1709,13 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'p[align=justify i]',
-      'h1[align=justify i]',
-      'h2[align=justify i]',
-      'h3[align=justify i]',
-      'h4[align=justify i]',
-      'h5[align=justify i]',
-      'h6[align=justify i]',
+      'p[align="justify" i]',
+      'h1[align="justify" i]',
+      'h2[align="justify" i]',
+      'h3[align="justify" i]',
+      'h4[align="justify" i]',
+      'h5[align="justify" i]',
+      'h6[align="justify" i]',
     ],
     styles: [
       {
@@ -1723,12 +1727,12 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'thead[valign=top i]',
-      'tbody[valign=top i]',
-      'tfoot[valign=top i]',
-      'tr[valign=top i]',
-      'td[valign=top i]',
-      'th[valign=top i]',
+      'thead[valign="top" i]',
+      'tbody[valign="top" i]',
+      'tfoot[valign="top" i]',
+      'tr[valign="top" i]',
+      'td[valign="top" i]',
+      'th[valign="top" i]',
     ],
     styles: [
       {
@@ -1740,12 +1744,12 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'thead[valign=middle i]',
-      'tbody[valign=middle i]',
-      'tfoot[valign=middle i]',
-      'tr[valign=middle i]',
-      'td[valign=middle i]',
-      'th[valign=middle i]',
+      'thead[valign="middle" i]',
+      'tbody[valign="middle" i]',
+      'tfoot[valign="middle" i]',
+      'tr[valign="middle" i]',
+      'td[valign="middle" i]',
+      'th[valign="middle" i]',
     ],
     styles: [
       {
@@ -1757,12 +1761,12 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'thead[valign=bottom i]',
-      'tbody[valign=bottom i]',
-      'tfoot[valign=bottom i]',
-      'tr[valign=bottom i]',
-      'td[valign=bottom i]',
-      'th[valign=bottom i]',
+      'thead[valign="bottom" i]',
+      'tbody[valign="bottom" i]',
+      'tfoot[valign="bottom" i]',
+      'tr[valign="bottom" i]',
+      'td[valign="bottom" i]',
+      'th[valign="bottom" i]',
     ],
     styles: [
       {
@@ -1774,12 +1778,12 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'thead[valign=baseline i]',
-      'tbody[valign=baseline i]',
-      'tfoot[valign=baseline i]',
-      'tr[valign=baseline i]',
-      'td[valign=baseline i]',
-      'th[valign=baseline i]',
+      'thead[valign="baseline" i]',
+      'tbody[valign="baseline" i]',
+      'tfoot[valign="baseline" i]',
+      'tr[valign="baseline" i]',
+      'td[valign="baseline" i]',
+      'th[valign="baseline" i]',
     ],
     styles: [
       {
@@ -1801,11 +1805,11 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'table[rules=none i]',
-      'table[rules=groups i]',
-      'table[rules=rows i]',
-      'table[rules=cols i]',
-      'table[rules=all i]',
+      'table[rules="none" i]',
+      'table[rules="groups" i]',
+      'table[rules="rows" i]',
+      'table[rules="cols" i]',
+      'table[rules="all" i]',
     ],
     styles: [
       {
@@ -1830,7 +1834,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[frame=void i]'],
+    selectors: ['table[frame="void" i]'],
     styles: [
       {
         property: 'border-style',
@@ -1840,7 +1844,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[frame=above i]'],
+    selectors: ['table[frame="above" i]'],
     styles: [
       {
         property: 'border-style',
@@ -1850,7 +1854,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[frame=below i]'],
+    selectors: ['table[frame="below" i]'],
     styles: [
       {
         property: 'border-style',
@@ -1860,7 +1864,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[frame=hsides i]'],
+    selectors: ['table[frame="hsides" i]'],
     styles: [
       {
         property: 'border-style',
@@ -1870,7 +1874,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[frame=lhs i]'],
+    selectors: ['table[frame="lhs" i]'],
     styles: [
       {
         property: 'border-style',
@@ -1880,7 +1884,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[frame=rhs i]'],
+    selectors: ['table[frame="rhs" i]'],
     styles: [
       {
         property: 'border-style',
@@ -1890,7 +1894,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[frame=vsides i]'],
+    selectors: ['table[frame="vsides" i]'],
     styles: [
       {
         property: 'border-style',
@@ -1900,7 +1904,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[frame=box i]', 'table[frame=border i]'],
+    selectors: ['table[frame="box" i]', 'table[frame="border" i]'],
     styles: [
       {
         property: 'border-style',
@@ -1934,30 +1938,30 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'table[rules=none i] > tr > td',
-      'table[rules=none i] > tr > th',
-      'table[rules=none i] > thead > tr > td',
-      'table[rules=none i] > thead > tr > th',
-      'table[rules=none i] > tbody > tr > td',
-      'table[rules=none i] > tbody > tr > th',
-      'table[rules=none i] > tfoot > tr > td',
-      'table[rules=none i] > tfoot > tr > th',
-      'table[rules=groups i] > tr > td',
-      'table[rules=groups i] > tr > th',
-      'table[rules=groups i] > thead > tr > td',
-      'table[rules=groups i] > thead > tr > th',
-      'table[rules=groups i] > tbody > tr > td',
-      'table[rules=groups i] > tbody > tr > th',
-      'table[rules=groups i] > tfoot > tr > td',
-      'table[rules=groups i] > tfoot > tr > th',
-      'table[rules=rows i] > tr > td',
-      'table[rules=rows i] > tr > th',
-      'table[rules=rows i] > thead > tr > td',
-      'table[rules=rows i] > thead > tr > th',
-      'table[rules=rows i] > tbody > tr > td',
-      'table[rules=rows i] > tbody > tr > th',
-      'table[rules=rows i] > tfoot > tr > td',
-      'table[rules=rows i] > tfoot > tr > th',
+      'table[rules="none" i] > tr > td',
+      'table[rules="none" i] > tr > th',
+      'table[rules="none" i] > thead > tr > td',
+      'table[rules="none" i] > thead > tr > th',
+      'table[rules="none" i] > tbody > tr > td',
+      'table[rules="none" i] > tbody > tr > th',
+      'table[rules="none" i] > tfoot > tr > td',
+      'table[rules="none" i] > tfoot > tr > th',
+      'table[rules="groups" i] > tr > td',
+      'table[rules="groups" i] > tr > th',
+      'table[rules="groups" i] > thead > tr > td',
+      'table[rules="groups" i] > thead > tr > th',
+      'table[rules="groups" i] > tbody > tr > td',
+      'table[rules="groups" i] > tbody > tr > th',
+      'table[rules="groups" i] > tfoot > tr > td',
+      'table[rules="groups" i] > tfoot > tr > th',
+      'table[rules="rows" i] > tr > td',
+      'table[rules="rows" i] > tr > th',
+      'table[rules="rows" i] > thead > tr > td',
+      'table[rules="rows" i] > thead > tr > th',
+      'table[rules="rows" i] > tbody > tr > td',
+      'table[rules="rows" i] > tbody > tr > th',
+      'table[rules="rows" i] > tfoot > tr > td',
+      'table[rules="rows" i] > tfoot > tr > th',
     ],
     styles: [
       {
@@ -1973,14 +1977,14 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'table[rules=cols i] > tr > td',
-      'table[rules=cols i] > tr > th',
-      'table[rules=cols i] > thead > tr > td',
-      'table[rules=cols i] > thead > tr > th',
-      'table[rules=cols i] > tbody > tr > td',
-      'table[rules=cols i] > tbody > tr > th',
-      'table[rules=cols i] > tfoot > tr > td',
-      'table[rules=cols i] > tfoot > tr > th',
+      'table[rules="cols" i] > tr > td',
+      'table[rules="cols" i] > tr > th',
+      'table[rules="cols" i] > thead > tr > td',
+      'table[rules="cols" i] > thead > tr > th',
+      'table[rules="cols" i] > tbody > tr > td',
+      'table[rules="cols" i] > tbody > tr > th',
+      'table[rules="cols" i] > tfoot > tr > td',
+      'table[rules="cols" i] > tfoot > tr > th',
     ],
     styles: [
       {
@@ -2008,14 +2012,14 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'table[rules=all i] > tr > td',
-      'table[rules=all i] > tr > th',
-      'table[rules=all i] > thead > tr > td',
-      'table[rules=all i] > thead > tr > th',
-      'table[rules=all i] > tbody > tr > td',
-      'table[rules=all i] > tbody > tr > th',
-      'table[rules=all i] > tfoot > tr > td',
-      'table[rules=all i] > tfoot > tr > th',
+      'table[rules="all" i] > tr > td',
+      'table[rules="all" i] > tr > th',
+      'table[rules="all" i] > thead > tr > td',
+      'table[rules="all" i] > thead > tr > th',
+      'table[rules="all" i] > tbody > tr > td',
+      'table[rules="all" i] > tbody > tr > th',
+      'table[rules="all" i] > tfoot > tr > td',
+      'table[rules="all" i] > tfoot > tr > th',
     ],
     styles: [
       {
@@ -2030,7 +2034,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['table[rules=groups i] > colgroup'],
+    selectors: ['table[rules="groups" i] > colgroup'],
     styles: [
       {
         property: 'border-inline-start-width',
@@ -2053,9 +2057,9 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'table[rules=groups i] > thead',
-      'table[rules=groups i] > tbody',
-      'table[rules=groups i] > tfoot',
+      'table[rules="groups" i] > thead',
+      'table[rules="groups" i] > tbody',
+      'table[rules="groups" i] > tfoot',
     ],
     styles: [
       {
@@ -2079,10 +2083,10 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'table[rules=rows i] > tr',
-      'table[rules=rows i] > thead > tr',
-      'table[rules=rows i] > tbody > tr',
-      'table[rules=rows i] > tfoot > tr',
+      'table[rules="rows" i] > tr',
+      'table[rules="rows" i] > thead > tr',
+      'table[rules="rows" i] > tbody > tr',
+      'table[rules="rows" i] > tfoot > tr',
     ],
     styles: [
       {
@@ -2194,7 +2198,7 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'input:is([type=reset i], [type=button i], [type=submit i])',
+      'input:is([type="reset" i], [type="button" i], [type="submit" i])',
       'button',
     ],
     styles: [
@@ -2217,9 +2221,9 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'input[type=hidden i]',
-      'input[type=file i]',
-      'input[type=image i]',
+      'input[type="hidden" i]',
+      'input[type="file" i]',
+      'input[type="image" i]',
     ],
     styles: [
       {
@@ -2231,7 +2235,7 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'input:is([type=radio i], [type=checkbox i], [type=reset i], [type=button i],\n[type=submit i], [type=color i], [type=search i])',
+      'input:is([type="radio" i], [type="checkbox" i], [type="reset" i], [type="button" i], [type="submit" i], [type="color" i], [type="search" i])',
       'select',
       'button',
     ],
@@ -2254,7 +2258,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['input:not([type=image i])', 'textarea'],
+    selectors: ['input:not([type="image" i])', 'textarea'],
     styles: [
       {
         property: 'box-sizing',
@@ -2302,7 +2306,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['hr[align=left i]'],
+    selectors: ['hr[align="left" i]'],
     styles: [
       {
         property: 'margin-left',
@@ -2316,7 +2320,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['hr[align=right i]'],
+    selectors: ['hr[align="right" i]'],
     styles: [
       {
         property: 'margin-left',
@@ -2330,7 +2334,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['hr[align=center i]'],
+    selectors: ['hr[align="center" i]'],
     styles: [
       {
         property: 'margin-left',
@@ -2410,7 +2414,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['legend[align=left i]'],
+    selectors: ['legend[align="left" i]'],
     styles: [
       {
         property: 'justify-self',
@@ -2420,7 +2424,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['legend[align=center i]'],
+    selectors: ['legend[align="center" i]'],
     styles: [
       {
         property: 'justify-self',
@@ -2430,7 +2434,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['legend[align=right i]'],
+    selectors: ['legend[align="right" i]'],
     styles: [
       {
         property: 'justify-self',
@@ -2460,7 +2464,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['img[align=left i]'],
+    selectors: ['img[align="left" i]'],
     styles: [
       {
         property: 'margin-right',
@@ -2470,7 +2474,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['img[align=right i]'],
+    selectors: ['img[align="right" i]'],
     styles: [
       {
         property: 'margin-left',
@@ -2480,7 +2484,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ["iframe[frameborder='0']", 'iframe[frameborder=no i]'],
+    selectors: ['iframe[frameborder="0"]', 'iframe[frameborder="no" i]'],
     styles: [
       {
         property: 'border',
@@ -2491,11 +2495,11 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'embed[align=left i]',
-      'iframe[align=left i]',
-      'img[align=left i]',
-      'input[type=image i][align=left i]',
-      'object[align=left i]',
+      'embed[align="left" i]',
+      'iframe[align="left" i]',
+      'img[align="left" i]',
+      'input[type="image" i][align="left" i]',
+      'object[align="left" i]',
     ],
     styles: [
       {
@@ -2507,11 +2511,11 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'embed[align=right i]',
-      'iframe[align=right i]',
-      'img[align=right i]',
-      'input[type=image i][align=right i]',
-      'object[align=right i]',
+      'embed[align="right" i]',
+      'iframe[align="right" i]',
+      'img[align="right" i]',
+      'input[type="image" i][align="right" i]',
+      'object[align="right" i]',
     ],
     styles: [
       {
@@ -2523,11 +2527,11 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'embed[align=top i]',
-      'iframe[align=top i]',
-      'img[align=top i]',
-      'input[type=image i][align=top i]',
-      'object[align=top i]',
+      'embed[align="top" i]',
+      'iframe[align="top" i]',
+      'img[align="top" i]',
+      'input[type="image" i][align="top" i]',
+      'object[align="top" i]',
     ],
     styles: [
       {
@@ -2539,11 +2543,11 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'embed[align=baseline i]',
-      'iframe[align=baseline i]',
-      'img[align=baseline i]',
-      'input[type=image i][align=baseline i]',
-      'object[align=baseline i]',
+      'embed[align="baseline" i]',
+      'iframe[align="baseline" i]',
+      'img[align="baseline" i]',
+      'input[type="image" i][align="baseline" i]',
+      'object[align="baseline" i]',
     ],
     styles: [
       {
@@ -2555,11 +2559,11 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'embed[align=texttop i]',
-      'iframe[align=texttop i]',
-      'img[align=texttop i]',
-      'input[type=image i][align=texttop i]',
-      'object[align=texttop i]',
+      'embed[align="texttop" i]',
+      'iframe[align="texttop" i]',
+      'img[align="texttop" i]',
+      'input[type="image" i][align="texttop" i]',
+      'object[align="texttop" i]',
     ],
     styles: [
       {
@@ -2571,16 +2575,16 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'embed[align=absmiddle i]',
-      'iframe[align=absmiddle i]',
-      'img[align=absmiddle i]',
-      'input[type=image i][align=absmiddle i]',
-      'object[align=absmiddle i]',
-      'embed[align=abscenter i]',
-      'iframe[align=abscenter i]',
-      'img[align=abscenter i]',
-      'input[type=image i][align=abscenter i]',
-      'object[align=abscenter i]',
+      'embed[align="absmiddle" i]',
+      'iframe[align="absmiddle" i]',
+      'img[align="absmiddle" i]',
+      'input[type="image" i][align="absmiddle" i]',
+      'object[align="absmiddle" i]',
+      'embed[align="abscenter" i]',
+      'iframe[align="abscenter" i]',
+      'img[align="abscenter" i]',
+      'input[type="image" i][align="abscenter" i]',
+      'object[align="abscenter" i]',
     ],
     styles: [
       {
@@ -2592,11 +2596,11 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'embed[align=bottom i]',
-      'iframe[align=bottom i]',
-      'img[align=bottom i]',
-      'input[type=image i][align=bottom i]',
-      'object[align=bottom i]',
+      'embed[align="bottom" i]',
+      'iframe[align="bottom" i]',
+      'img[align="bottom" i]',
+      'input[type="image" i][align="bottom" i]',
+      'object[align="bottom" i]',
     ],
     styles: [
       {

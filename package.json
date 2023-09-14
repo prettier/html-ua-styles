@@ -51,6 +51,7 @@
     "@fisker/prettier-config": "5.1.1",
     "cheerio": "1.0.0-rc.12",
     "css-tree": "2.3.1",
+    "css-what": "6.1.0",
     "del-cli": "5.1.0",
     "eslint": "8.48.0",
     "husky": "8.0.3",

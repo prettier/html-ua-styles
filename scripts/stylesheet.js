@@ -1,4 +1,5 @@
 import * as cssTree from 'css-tree';
+import normalizeSelector from './normalize-selector.js';
 
 const knownKeys = new Map(
   [
@@ -71,7 +72,8 @@ class Stylesheet {
       throw new Error('Unexpected node');
     }
 
-    return this.#text.slice(node.loc.start.offset, node.loc.end.offset);
+    const text = this.#text.slice(node.loc.start.offset, node.loc.end.offset);
+    return normalizeSelector(text);
   }
 
   #stringifyRule(node) {
