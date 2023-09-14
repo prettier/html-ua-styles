@@ -1,1 +1,4 @@
-export default { singleQuote: true };
+export default {
+  singleQuote: true,
+  overrides: [{ files: '**/*.css', options: { singleQuote: false } }],
+};

@@ -6,8 +6,31 @@ import Stylesheet from './stylesheet.js';
 const CACHE_FILE = new URL('../.cache/standard.html', import.meta.url);
 const STYLE_FILE = new URL('../index.css', import.meta.url);
 const SCRIPT_FILE = new URL('../index.js', import.meta.url);
-const SOURCE_URL = 'https://raw.githubusercontent.com/whatwg/html/main/source';
+const SOURCE_URLS = [
+  'https://raw.githubusercontent.com/whatwg/html/main/source',
+  'https://cdn.jsdelivr.net/gh/whatwg/html/source',
+];
 const STYLE_NAMESPACE = '@namespace "http://www.w3.org/1999/xhtml";';
+
+const fetchHtml = async (url) => {
+  const response = await fetch(url);
+  const html = await response.text();
+  return `<!-- Downloaded from ${url} @${new Date()} -->\n\n${html}`;
+};
+
+const any = async (asyncFunctions) => {
+  const errors = [];
+  for (const function_ of asyncFunctions) {
+    try {
+      // eslint-disable-next-line no-await-in-loop
+      return await function_();
+    } catch (error) {
+      errors.push(error);
+    }
+  }
+
+  throw new AggregateError(errors, 'All failed.');
+};
 
 async function getStandardHtml() {
   let stat;
@@ -18,14 +41,13 @@ async function getStandardHtml() {
 
   if (stat) {
     if (Date.now() - stat.ctimeMs < /* 10 hours */ 10 * 60 * 60 * 1000) {
-      return fs.readFile(CACHE_FILE);
+      return fs.readFile(CACHE_FILE, 'utf8');
     }
 
     await fs.rm(CACHE_FILE);
   }
 
-  const response = await fetch(SOURCE_URL);
-  const html = await response.text();
+  const html = await any(SOURCE_URLS.map((url) => () => fetchHtml(url)));
 
   await fs.mkdir(new URL('./', CACHE_FILE), { recursive: true });
   await fs.writeFile(CACHE_FILE, html);
@@ -36,6 +58,7 @@ async function getStandardHtml() {
 async function getStyles() {
   const html = await getStandardHtml();
   const $ = cheerio.load(html);
+
   return $('pre > code[class="css"]')
     .toArray()
     .map((codeBlock) => $(codeBlock).text())
