@@ -71,7 +71,11 @@ async function build() {
   const text = await getStyles();
   const stylesheet = new Stylesheet(text);
 
-  await writePrettierFile(STYLE_FILE, text);
+  await writePrettierFile(
+    STYLE_FILE,
+    // https://github.com/prettier/prettier/issues/15397
+    text.replaceAll(/(?<=\[)(\w+)=(\w+)(?= s])/g, '$1="$2"'),
+  );
   await writePrettierFile(
     SCRIPT_FILE,
     `export default ${JSON.stringify(stylesheet, undefined, 2)};`,
