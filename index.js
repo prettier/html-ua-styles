@@ -695,6 +695,7 @@ export default [
     type: 'Styles',
     selectors: [
       '[dir]:dir(ltr)',
+      'slot:dir(ltr)',
       'bdi:dir(ltr)',
       'input[type="tel" i]:dir(ltr)',
     ],
@@ -707,7 +708,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['[dir]:dir(rtl)', 'bdi:dir(rtl)'],
+    selectors: ['[dir]:dir(rtl)', 'slot:dir(rtl)', 'bdi:dir(rtl)'],
     styles: [
       {
         property: 'direction',
@@ -768,6 +769,7 @@ export default [
       'li',
       'bdi',
       'output',
+      'slot',
       '[dir="ltr" i]',
       '[dir="rtl" i]',
       '[dir="auto" i]',
