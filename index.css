@@ -275,11 +275,13 @@ br[clear="both" i] {
 }
 
 [dir]:dir(ltr),
+slot:dir(ltr),
 bdi:dir(ltr),
 input[type="tel" i]:dir(ltr) {
   direction: ltr;
 }
 [dir]:dir(rtl),
+slot:dir(rtl),
 bdi:dir(rtl) {
   direction: rtl;
 }
@@ -334,6 +336,7 @@ ul,
 li,
 bdi,
 output,
+slot,
 [dir="ltr" i],
 [dir="rtl" i],
 [dir="auto" i] {
