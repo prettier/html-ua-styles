@@ -41,7 +41,7 @@ jobs:
         run: yarn build
 
       - name: Check File Changes
-        run: echo "Listing changed files:" && git diff --name-only --exit-code && echo "No files changed."
+        run: echo "Listing changed files:" && git diff --exit-code && echo "No files changed."
 
   lint:
     name: Lint
