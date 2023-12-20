@@ -2189,6 +2189,20 @@ export default [
   },
   {
     type: 'Styles',
+    selectors: ['input:not([type="image" i])'],
+    styles: [
+      {
+        property: 'overflow',
+        value: 'clip',
+      },
+      {
+        property: 'overflow-clip-margin',
+        value: '0',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
     selectors: ['input', 'select', 'textarea'],
     styles: [
       {
@@ -2461,6 +2475,20 @@ export default [
       {
         property: 'object-fit',
         value: 'contain',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['img:is([sizes="auto" i], [sizes^="auto," i])'],
+    styles: [
+      {
+        property: 'contain',
+        value: 'size',
+      },
+      {
+        property: 'contain-intrinsic-size',
+        value: '300px 150px',
       },
     ],
   },

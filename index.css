@@ -980,6 +980,11 @@ textarea {
   appearance: auto;
 }
 
+input:not([type="image" i]) {
+  overflow: clip !important;
+  overflow-clip-margin: 0 !important;
+}
+
 input,
 select,
 textarea {
@@ -1087,6 +1092,11 @@ iframe {
 }
 video {
   object-fit: contain;
+}
+
+img:is([sizes="auto" i], [sizes^="auto," i]) {
+  contain: size !important;
+  contain-intrinsic-size: 300px 150px;
 }
 
 img[align="left" i] {
