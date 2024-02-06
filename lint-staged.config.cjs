@@ -6,4 +6,7 @@
  *
  */
 
-module.exports = require('@fisker/lint-staged-config');
+module.exports = {
+  ...require('@fisker/lint-staged-config'),
+  '*.{css,htm,html,less,scss}': [],
+};
