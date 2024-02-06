@@ -275,13 +275,11 @@ br[clear="both" i] {
 }
 
 [dir]:dir(ltr),
-slot:dir(ltr),
 bdi:dir(ltr),
 input[type="tel" i]:dir(ltr) {
   direction: ltr;
 }
 [dir]:dir(rtl),
-slot:dir(rtl),
 bdi:dir(rtl) {
   direction: rtl;
 }
@@ -336,7 +334,6 @@ ul,
 li,
 bdi,
 output,
-slot,
 [dir="ltr" i],
 [dir="rtl" i],
 [dir="auto" i] {
@@ -980,7 +977,12 @@ textarea {
   appearance: auto;
 }
 
-input:not([type="image" i]) {
+input:not(
+    [type="image" i],
+    [type="range" i],
+    [type="checkbox" i],
+    [type="radio" i]
+  ) {
   overflow: clip !important;
   overflow-clip-margin: 0 !important;
 }
@@ -989,6 +991,10 @@ input,
 select,
 textarea {
   text-align: initial;
+}
+
+:autofill {
+  field-sizing: fixed !important;
 }
 
 input:is([type="reset" i], [type="button" i], [type="submit" i]),

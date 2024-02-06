@@ -41,7 +41,7 @@
     "lint:markdown": "markdownlint-cli2",
     "lint:package-json": "yarn run format:package-json --check",
     "lint:prettier": "prettier . --check",
-    "prepare": "husky install",
+    "prepare": "husky",
     "release": "run-s clean build dist"
   },
   "devDependencies": {
