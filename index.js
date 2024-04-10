@@ -142,11 +142,7 @@ export default [
     ],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '1em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '1em',
       },
     ],
@@ -156,11 +152,7 @@ export default [
     selectors: ['blockquote', 'figure'],
     styles: [
       {
-        property: 'margin-inline-start',
-        value: '40px',
-      },
-      {
-        property: 'margin-inline-end',
+        property: 'margin-inline',
         value: '40px',
       },
     ],
@@ -906,11 +898,7 @@ export default [
     selectors: ['h1'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '0.67em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '0.67em',
       },
       {
@@ -928,11 +916,7 @@ export default [
     selectors: ['h2'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '0.83em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '0.83em',
       },
       {
@@ -950,11 +934,7 @@ export default [
     selectors: ['h3'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '1.00em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '1.00em',
       },
       {
@@ -972,11 +952,7 @@ export default [
     selectors: ['h4'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '1.33em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '1.33em',
       },
       {
@@ -994,11 +970,7 @@ export default [
     selectors: ['h5'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '1.67em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '1.67em',
       },
       {
@@ -1016,11 +988,7 @@ export default [
     selectors: ['h6'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '2.33em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '2.33em',
       },
       {
@@ -1038,11 +1006,7 @@ export default [
     selectors: ['x h1'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '0.83em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '0.83em',
       },
       {
@@ -1056,11 +1020,7 @@ export default [
     selectors: ['x x h1'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '1.00em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '1.00em',
       },
       {
@@ -1074,11 +1034,7 @@ export default [
     selectors: ['x x x h1'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '1.33em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '1.33em',
       },
       {
@@ -1092,11 +1048,7 @@ export default [
     selectors: ['x x x x h1'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '1.67em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '1.67em',
       },
       {
@@ -1110,11 +1062,7 @@ export default [
     selectors: ['x x x x x h1'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '2.33em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '2.33em',
       },
       {
@@ -1152,11 +1100,7 @@ export default [
     selectors: ['dir', 'dl', 'menu', 'ol', 'ul'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '1em',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '1em',
       },
     ],
@@ -1166,11 +1110,7 @@ export default [
     selectors: [':is(dir, dl, menu, ol, ul) :is(dir, dl, menu, ol, ul)'],
     styles: [
       {
-        property: 'margin-block-start',
-        value: '0',
-      },
-      {
-        property: 'margin-block-end',
+        property: 'margin-block',
         value: '0',
       },
     ],
@@ -1616,11 +1556,7 @@ export default [
     selectors: ['table[align="center" i]'],
     styles: [
       {
-        property: 'margin-inline-start',
-        value: 'auto',
-      },
-      {
-        property: 'margin-inline-end',
+        property: 'margin-inline',
         value: 'auto',
       },
     ],
@@ -1992,19 +1928,11 @@ export default [
         value: '1px',
       },
       {
-        property: 'border-block-start-style',
+        property: 'border-block-style',
         value: 'none',
       },
       {
-        property: 'border-inline-end-style',
-        value: 'solid',
-      },
-      {
-        property: 'border-block-end-style',
-        value: 'none',
-      },
-      {
-        property: 'border-inline-start-style',
+        property: 'border-inline-style',
         value: 'solid',
       },
     ],
@@ -2037,19 +1965,11 @@ export default [
     selectors: ['table[rules="groups" i] > colgroup'],
     styles: [
       {
-        property: 'border-inline-start-width',
+        property: 'border-inline-width',
         value: '1px',
       },
       {
-        property: 'border-inline-start-style',
-        value: 'solid',
-      },
-      {
-        property: 'border-inline-end-width',
-        value: '1px',
-      },
-      {
-        property: 'border-inline-end-style',
+        property: 'border-inline-style',
         value: 'solid',
       },
     ],
@@ -2063,19 +1983,11 @@ export default [
     ],
     styles: [
       {
-        property: 'border-block-start-width',
+        property: 'border-block-width',
         value: '1px',
       },
       {
-        property: 'border-block-start-style',
-        value: 'solid',
-      },
-      {
-        property: 'border-block-end-width',
-        value: '1px',
-      },
-      {
-        property: 'border-block-end-style',
+        property: 'border-block-style',
         value: 'solid',
       },
     ],
@@ -2090,19 +2002,11 @@ export default [
     ],
     styles: [
       {
-        property: 'border-block-start-width',
+        property: 'border-block-width',
         value: '1px',
       },
       {
-        property: 'border-block-start-style',
-        value: 'solid',
-      },
-      {
-        property: 'border-block-end-width',
-        value: '1px',
-      },
-      {
-        property: 'border-block-end-style',
+        property: 'border-block-style',
         value: 'solid',
       },
     ],
@@ -2309,19 +2213,11 @@ export default [
         value: '1px',
       },
       {
-        property: 'margin-block-start',
+        property: 'margin-block',
         value: '0.5em',
       },
       {
-        property: 'margin-inline-end',
-        value: 'auto',
-      },
-      {
-        property: 'margin-block-end',
-        value: '0.5em',
-      },
-      {
-        property: 'margin-inline-start',
+        property: 'margin-inline',
         value: 'auto',
       },
       {
@@ -2391,11 +2287,7 @@ export default [
         value: 'block',
       },
       {
-        property: 'margin-inline-start',
-        value: '2px',
-      },
-      {
-        property: 'margin-inline-end',
+        property: 'margin-inline',
         value: '2px',
       },
       {
@@ -2403,19 +2295,11 @@ export default [
         value: 'groove 2px ThreeDFace',
       },
       {
-        property: 'padding-block-start',
-        value: '0.35em',
+        property: 'padding-block',
+        value: '0.35em 0.625em',
       },
       {
-        property: 'padding-inline-end',
-        value: '0.75em',
-      },
-      {
-        property: 'padding-block-end',
-        value: '0.625em',
-      },
-      {
-        property: 'padding-inline-start',
+        property: 'padding-inline',
         value: '0.75em',
       },
       {
@@ -2429,11 +2313,7 @@ export default [
     selectors: ['legend'],
     styles: [
       {
-        property: 'padding-inline-start',
-        value: '2px',
-      },
-      {
-        property: 'padding-inline-end',
+        property: 'padding-inline',
         value: '2px',
       },
     ],
@@ -2688,6 +2568,10 @@ export default [
       {
         property: 'text-align',
         value: 'initial',
+      },
+      {
+        property: 'overflow',
+        value: 'hidden',
       },
     ],
   },

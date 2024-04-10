@@ -18,20 +18,6 @@ const fetchHtml = async (url) => {
   return `<!-- Downloaded from ${url} @${new Date()} -->\n\n${html}`;
 };
 
-const any = async (asyncFunctions) => {
-  const errors = [];
-  for (const function_ of asyncFunctions) {
-    try {
-      // eslint-disable-next-line no-await-in-loop
-      return await function_();
-    } catch (error) {
-      errors.push(error);
-    }
-  }
-
-  throw new AggregateError(errors, 'All failed.');
-};
-
 async function getStandardHtml() {
   let stat;
 
@@ -47,7 +33,7 @@ async function getStandardHtml() {
     await fs.rm(CACHE_FILE);
   }
 
-  const html = await any(SOURCE_URLS.map((url) => () => fetchHtml(url)));
+  const html = await Promise.any(SOURCE_URLS.map((url) => fetchHtml(url)));
 
   await fs.mkdir(new URL('./', CACHE_FILE), { recursive: true });
   await fs.writeFile(CACHE_FILE, html);
