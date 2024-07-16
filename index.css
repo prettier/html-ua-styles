@@ -1148,6 +1148,10 @@ object[align="bottom" i] {
   vertical-align: bottom;
 }
 
+details,
+summary {
+  display: block;
+}
 details > summary:first-of-type {
   display: list-item;
   counter-increment: list-item 0;
