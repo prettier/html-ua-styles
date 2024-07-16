@@ -2531,6 +2531,16 @@ export default [
   },
   {
     type: 'Styles',
+    selectors: ['details', 'summary'],
+    styles: [
+      {
+        property: 'display',
+        value: 'block',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
     selectors: ['details > summary:first-of-type'],
     styles: [
       {
