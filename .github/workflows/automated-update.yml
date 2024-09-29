@@ -6,12 +6,11 @@ on:
     # “At 00:00 on Friday.” https://crontab.guru/#0_0_*_*_5
     - cron: '0 0 * * 5'
 
-permissions:
-  pull-requests: write
-  contents: write
-
 jobs:
   update:
+    permissions:
+      pull-requests: write
+      contents: write
     if: github.event_name != 'schedule' || github.repository == 'prettier/html-ua-styles'
     runs-on: ubuntu-latest
     env:
