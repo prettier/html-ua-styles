@@ -1082,11 +1082,6 @@ img[align="right" i] {
   margin-left: 3px;
 }
 
-iframe[frameborder="0"],
-iframe[frameborder="no" i] {
-  border: none;
-}
-
 embed[align="left" i],
 iframe[align="left" i],
 img[align="left" i],

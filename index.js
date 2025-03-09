@@ -2404,16 +2404,6 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['iframe[frameborder="0"]', 'iframe[frameborder="no" i]'],
-    styles: [
-      {
-        property: 'border',
-        value: 'none',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
     selectors: [
       'embed[align="left" i]',
       'iframe[align="left" i]',
