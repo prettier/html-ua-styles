@@ -1279,6 +1279,36 @@ export default [
   },
   {
     type: 'Styles',
+    selectors: ['li'],
+    styles: [
+      {
+        property: 'list-style-position',
+        value: 'inside',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['li :is(dir, menu, ol, ul)'],
+    styles: [
+      {
+        property: 'list-style-position',
+        value: 'outside',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: [':is(dir, menu, ol, ul) :is(dir, menu, ol, ul, li)'],
+    styles: [
+      {
+        property: 'list-style-position',
+        value: 'unset',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
     selectors: ['table'],
     styles: [
       {
