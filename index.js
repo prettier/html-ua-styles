@@ -1003,76 +1003,6 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['x h1'],
-    styles: [
-      {
-        property: 'margin-block',
-        value: '0.83em',
-      },
-      {
-        property: 'font-size',
-        value: '1.50em',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
-    selectors: ['x x h1'],
-    styles: [
-      {
-        property: 'margin-block',
-        value: '1.00em',
-      },
-      {
-        property: 'font-size',
-        value: '1.17em',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
-    selectors: ['x x x h1'],
-    styles: [
-      {
-        property: 'margin-block',
-        value: '1.33em',
-      },
-      {
-        property: 'font-size',
-        value: '1.00em',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
-    selectors: ['x x x x h1'],
-    styles: [
-      {
-        property: 'margin-block',
-        value: '1.67em',
-      },
-      {
-        property: 'font-size',
-        value: '0.83em',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
-    selectors: ['x x x x x h1'],
-    styles: [
-      {
-        property: 'margin-block',
-        value: '2.33em',
-      },
-      {
-        property: 'font-size',
-        value: '0.67em',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
     selectors: ['dir', 'dd', 'dl', 'dt', 'menu', 'ol', 'ul'],
     styles: [
       {
@@ -2622,6 +2552,285 @@ export default [
       {
         property: 'appearance',
         value: 'auto',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select'],
+    styles: [
+      {
+        property: 'text-transform',
+        value: 'initial',
+      },
+      {
+        property: 'text-align',
+        value: 'initial',
+      },
+      {
+        property: 'text-indent',
+        value: 'initial',
+      },
+      {
+        property: 'background-color',
+        value: 'transparent',
+      },
+      {
+        property: 'border',
+        value: '1px solid currentColor',
+      },
+      {
+        property: 'padding-block',
+        value: '0.25em',
+      },
+      {
+        property: 'padding-inline',
+        value: '0.5em',
+      },
+      {
+        property: 'min-block-size',
+        value: 'calc-size(auto, max(size, 24px, 1lh))',
+      },
+      {
+        property: 'min-inline-size',
+        value: 'calc-size(auto, max(size, 24px))',
+      },
+      {
+        property: 'display',
+        value: 'inline-flex',
+      },
+      {
+        property: 'gap',
+        value: '0.5em',
+      },
+      {
+        property: 'border-radius',
+        value: '0.5em',
+      },
+      {
+        property: 'user-select',
+        value: 'none',
+      },
+      {
+        property: 'box-sizing',
+        value: 'border-box',
+      },
+      {
+        property: 'field-sizing',
+        value: 'content',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select > button:first-child'],
+    styles: [
+      {
+        property: 'all',
+        value: 'unset',
+      },
+      {
+        property: 'display',
+        value: 'contents',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select:enabled:hover', 'select option:enabled:hover'],
+    styles: [
+      {
+        property: 'background-color',
+        value: 'color-mix(in lab, currentColor 10%, transparent)',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select:enabled:active', 'select option:enabled:active'],
+    styles: [
+      {
+        property: 'background-color',
+        value: 'color-mix(in lab, currentColor 20%, transparent)',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select:disabled', 'select option:disabled'],
+    styles: [
+      {
+        property: 'color',
+        value: 'color-mix(in lab, currentColor 50%, transparent)',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['::picker(select)'],
+    styles: [
+      {
+        property: 'box-sizing',
+        value: 'border-box',
+      },
+      {
+        property: 'border',
+        value: '1px solid',
+      },
+      {
+        property: 'padding',
+        value: '0',
+      },
+      {
+        property: 'color',
+        value: 'CanvasText',
+      },
+      {
+        property: 'background-color',
+        value: 'Canvas',
+      },
+      {
+        property: 'margin',
+        value: '0',
+      },
+      {
+        property: 'inset',
+        value: 'auto',
+      },
+      {
+        property: 'min-inline-size',
+        value: 'anchor-size(self-inline)',
+      },
+      {
+        property: 'max-block-size',
+        value: 'stretch',
+      },
+      {
+        property: 'overflow',
+        value: 'auto',
+      },
+      {
+        property: 'position-area',
+        value: 'block-end span-inline-end',
+      },
+      {
+        property: 'position-try-order',
+        value: 'most-block-size',
+      },
+      {
+        property: 'position-try-fallbacks',
+        value:
+          'block-start span-inline-end,\n    block-end span-inline-start,\n    block-start span-inline-start',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option'],
+    styles: [
+      {
+        property: 'min-inline-size',
+        value: '24px',
+      },
+      {
+        property: 'min-block-size',
+        value: 'max(24px, 1lh)',
+      },
+      {
+        property: 'padding-inline',
+        value: '0.5em',
+      },
+      {
+        property: 'padding-block-end',
+        value: '0',
+      },
+      {
+        property: 'display',
+        value: 'flex',
+      },
+      {
+        property: 'align-items',
+        value: 'center',
+      },
+      {
+        property: 'gap',
+        value: '0.5em',
+      },
+      {
+        property: 'white-space',
+        value: 'nowrap',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option::checkmark'],
+    styles: [
+      {
+        property: 'content',
+        value: "'\\2713' / ''",
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option:not(:checked)::checkmark'],
+    styles: [
+      {
+        property: 'visibility',
+        value: 'hidden',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select::picker-icon'],
+    styles: [
+      {
+        property: 'content',
+        value: 'counter(fake-counter-name, disclosure-open)',
+      },
+      {
+        property: 'display',
+        value: 'block',
+      },
+      {
+        property: 'margin-inline-start',
+        value: 'auto',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select optgroup'],
+    styles: [
+      {
+        property: 'font-weight',
+        value: 'bolder',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select optgroup option'],
+    styles: [
+      {
+        property: 'font-weight',
+        value: 'normal',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select optgroup legend'],
+    styles: [
+      {
+        property: 'padding-inline',
+        value: '0.5em',
+      },
+      {
+        property: 'min-block-size',
+        value: '1lh',
       },
     ],
   },

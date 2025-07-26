@@ -461,27 +461,6 @@ h6 {
   font-weight: bold;
 }
 
-x h1 {
-  margin-block: 0.83em;
-  font-size: 1.5em;
-}
-x x h1 {
-  margin-block: 1em;
-  font-size: 1.17em;
-}
-x x x h1 {
-  margin-block: 1.33em;
-  font-size: 1em;
-}
-x x x x h1 {
-  margin-block: 1.67em;
-  font-size: 0.83em;
-}
-x x x x x h1 {
-  margin-block: 2.33em;
-  font-size: 0.67em;
-}
-
 dir,
 dd,
 dl,
@@ -1178,4 +1157,96 @@ meter {
 
 progress {
   appearance: auto;
+}
+
+select {
+  text-transform: initial;
+  text-align: initial;
+  text-indent: initial;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  padding-block: 0.25em;
+  padding-inline: 0.5em;
+  min-block-size: calc-size(auto, max(size, 24px, 1lh));
+  min-inline-size: calc-size(auto, max(size, 24px));
+  display: inline-flex;
+  gap: 0.5em;
+  border-radius: 0.5em;
+  user-select: none;
+  box-sizing: border-box;
+  field-sizing: content !important;
+}
+
+select > button:first-child {
+  all: unset;
+  display: contents;
+}
+
+select:enabled:hover,
+select option:enabled:hover {
+  background-color: color-mix(in lab, currentColor 10%, transparent);
+}
+select:enabled:active,
+select option:enabled:active {
+  background-color: color-mix(in lab, currentColor 20%, transparent);
+}
+select:disabled,
+select option:disabled {
+  color: color-mix(in lab, currentColor 50%, transparent);
+}
+
+::picker(select) {
+  box-sizing: border-box;
+  border: 1px solid;
+  padding: 0;
+  color: CanvasText;
+  background-color: Canvas;
+  margin: 0;
+  inset: auto;
+  min-inline-size: anchor-size(self-inline);
+  max-block-size: stretch;
+  overflow: auto;
+  position-area: block-end span-inline-end;
+  position-try-order: most-block-size;
+  position-try-fallbacks:
+    block-start span-inline-end,
+    block-end span-inline-start,
+    block-start span-inline-start;
+}
+
+select option {
+  min-inline-size: 24px;
+  min-block-size: max(24px, 1lh);
+  padding-inline: 0.5em;
+  padding-block-end: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  white-space: nowrap;
+}
+
+select option::checkmark {
+  content: "\2713" / "";
+}
+select option:not(:checked)::checkmark {
+  visibility: hidden;
+}
+
+select::picker-icon {
+  content: counter(fake-counter-name, disclosure-open);
+  display: block;
+  margin-inline-start: auto;
+}
+
+select optgroup {
+  font-weight: bolder;
+}
+
+select optgroup option {
+  font-weight: normal;
+}
+
+select optgroup legend {
+  padding-inline: 0.5em;
+  min-block-size: 1lh;
 }
