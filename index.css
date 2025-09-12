@@ -415,35 +415,33 @@ section {
   display: block;
 }
 
-h1 {
+:heading {
+  font-weight: bold;
+}
+
+:heading(1) {
   margin-block: 0.67em;
   font-size: 2em;
-  font-weight: bold;
 }
-h2 {
+:heading(2) {
   margin-block: 0.83em;
   font-size: 1.5em;
-  font-weight: bold;
 }
-h3 {
+:heading(3) {
   margin-block: 1em;
   font-size: 1.17em;
-  font-weight: bold;
 }
-h4 {
+:heading(4) {
   margin-block: 1.33em;
   font-size: 1em;
-  font-weight: bold;
 }
-h5 {
+:heading(5) {
   margin-block: 1.67em;
   font-size: 0.83em;
-  font-weight: bold;
 }
-h6 {
-  margin-block: 2.33em;
+:heading(6, 7, 8, 9) {
   font-size: 0.67em;
-  font-weight: bold;
+  margin-block: 2.33em;
 }
 
 dir,
