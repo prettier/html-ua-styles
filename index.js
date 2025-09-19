@@ -2732,7 +2732,7 @@ export default [
     styles: [
       {
         property: 'content',
-        value: "'\\2713' / ''",
+        value: String.raw`'\2713' / ''`,
       },
     ],
   },

@@ -52,6 +52,7 @@ class Stylesheet {
     );
   }
 
+  // eslint-disable-next-line class-methods-use-this
   #stringifyDeclaration(node) {
     const { property, important, value } = node;
 
