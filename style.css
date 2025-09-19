@@ -1000,14 +1000,14 @@ input[type="image" i] {
 }
 
 input:is(
-    [type="radio" i],
-    [type="checkbox" i],
-    [type="reset" i],
-    [type="button" i],
-    [type="submit" i],
-    [type="color" i],
-    [type="search" i]
-  ),
+  [type="radio" i],
+  [type="checkbox" i],
+  [type="reset" i],
+  [type="button" i],
+  [type="submit" i],
+  [type="color" i],
+  [type="search" i]
+),
 select,
 button {
   box-sizing: border-box;

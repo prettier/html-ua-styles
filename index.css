@@ -926,11 +926,11 @@ textarea {
 }
 
 input:not(
-    [type="image" i],
-    [type="range" i],
-    [type="checkbox" i],
-    [type="radio" i]
-  ) {
+  [type="image" i],
+  [type="range" i],
+  [type="checkbox" i],
+  [type="radio" i]
+) {
   overflow: clip !important;
   overflow-clip-margin: 0 !important;
 }
@@ -962,14 +962,14 @@ input[type="image" i] {
 }
 
 input:is(
-    [type="radio" i],
-    [type="checkbox" i],
-    [type="reset" i],
-    [type="button" i],
-    [type="submit" i],
-    [type="color" i],
-    [type="search" i]
-  ),
+  [type="radio" i],
+  [type="checkbox" i],
+  [type="reset" i],
+  [type="button" i],
+  [type="submit" i],
+  [type="color" i],
+  [type="search" i]
+),
 select,
 button {
   box-sizing: border-box;

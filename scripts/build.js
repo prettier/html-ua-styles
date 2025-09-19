@@ -23,7 +23,9 @@ async function getStandardHtml() {
 
   try {
     stat = await fs.stat(CACHE_FILE);
-  } catch {}
+  } catch {
+    // No op
+  }
 
   if (stat) {
     if (Date.now() - stat.ctimeMs < /* 10 hours */ 10 * 60 * 60 * 1000) {
