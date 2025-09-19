@@ -873,7 +873,17 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['h1'],
+    selectors: [':heading'],
+    styles: [
+      {
+        property: 'font-weight',
+        value: 'bold',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: [':heading(1)'],
     styles: [
       {
         property: 'margin-block',
@@ -883,15 +893,11 @@ export default [
         property: 'font-size',
         value: '2.00em',
       },
-      {
-        property: 'font-weight',
-        value: 'bold',
-      },
     ],
   },
   {
     type: 'Styles',
-    selectors: ['h2'],
+    selectors: [':heading(2)'],
     styles: [
       {
         property: 'margin-block',
@@ -901,15 +907,11 @@ export default [
         property: 'font-size',
         value: '1.50em',
       },
-      {
-        property: 'font-weight',
-        value: 'bold',
-      },
     ],
   },
   {
     type: 'Styles',
-    selectors: ['h3'],
+    selectors: [':heading(3)'],
     styles: [
       {
         property: 'margin-block',
@@ -919,15 +921,11 @@ export default [
         property: 'font-size',
         value: '1.17em',
       },
-      {
-        property: 'font-weight',
-        value: 'bold',
-      },
     ],
   },
   {
     type: 'Styles',
-    selectors: ['h4'],
+    selectors: [':heading(4)'],
     styles: [
       {
         property: 'margin-block',
@@ -937,15 +935,11 @@ export default [
         property: 'font-size',
         value: '1.00em',
       },
-      {
-        property: 'font-weight',
-        value: 'bold',
-      },
     ],
   },
   {
     type: 'Styles',
-    selectors: ['h5'],
+    selectors: [':heading(5)'],
     styles: [
       {
         property: 'margin-block',
@@ -955,27 +949,19 @@ export default [
         property: 'font-size',
         value: '0.83em',
       },
-      {
-        property: 'font-weight',
-        value: 'bold',
-      },
     ],
   },
   {
     type: 'Styles',
-    selectors: ['h6'],
+    selectors: [':heading(6, 7, 8, 9)'],
     styles: [
-      {
-        property: 'margin-block',
-        value: '2.33em',
-      },
       {
         property: 'font-size',
         value: '0.67em',
       },
       {
-        property: 'font-weight',
-        value: 'bold',
+        property: 'margin-block',
+        value: '2.33em',
       },
     ],
   },
