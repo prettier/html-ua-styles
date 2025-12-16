@@ -1,3 +1,5 @@
+import assert from 'node:assert/strict';
+import { inspect } from 'node:util';
 import * as cssTree from 'css-tree';
 import normalizeSelector from './normalize-selector.js';
 
@@ -10,15 +12,17 @@ const knownKeys = new Map(
 
 const assertNodeType = (node, type) => {
   if (node.type !== type) {
-    throw Object.assign(new Error('Unexpected node type'), { node });
+    assert.equal(node.type, type, `Unexpected node type:\n${inspect(node)}`);
   }
 
   const keys = knownKeys.get(node.type);
   if (keys) {
     for (const key of Object.keys(node)) {
-      if (!keys.has(key)) {
-        throw new Error(`Unexpected key '${key}' in '${node.type}'.`);
-      }
+      assert.ok(
+        keys.has(key),
+        type,
+        `Unexpected key '${key}' in '${node.type}'.`,
+      );
     }
   }
 };
@@ -67,6 +71,11 @@ class Stylesheet {
         .map((part) => part.trim())
         .join(', ');
     }
+
+    assert.ok(
+      !value.includes('\n'),
+      `Unexpected '\\n' in value node.\n${inspect(valueNode)}`,
+    );
 
     const style = { property, value: value };
 
