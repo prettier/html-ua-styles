@@ -1953,7 +1953,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['input', 'select', 'button', 'textarea'],
+    selectors: ['input', 'button', 'textarea'],
     styles: [
       {
         property: 'letter-spacing',
@@ -1967,6 +1967,12 @@ export default [
         property: 'line-height',
         value: 'initial',
       },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['input', 'select', 'button', 'textarea'],
+    styles: [
       {
         property: 'text-transform',
         value: 'initial',
@@ -2496,17 +2502,33 @@ export default [
     selectors: ['select'],
     styles: [
       {
-        property: 'text-transform',
+        property: 'letter-spacing',
         value: 'initial',
       },
       {
-        property: 'text-align',
+        property: 'word-spacing',
         value: 'initial',
       },
       {
-        property: 'text-indent',
+        property: 'line-height',
         value: 'initial',
       },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select'],
+    styles: [
+      {
+        property: 'display',
+        value: 'inline-block',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select'],
+    styles: [
       {
         property: 'background-color',
         value: 'transparent',
@@ -2514,6 +2536,146 @@ export default [
       {
         property: 'border',
         value: '1px solid currentColor',
+      },
+      {
+        property: 'user-select',
+        value: 'none',
+      },
+      {
+        property: 'box-sizing',
+        value: 'border-box',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option:enabled:hover'],
+    styles: [
+      {
+        property: 'background-color',
+        value: 'color-mix(in lab, currentColor 10%, transparent)',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option:enabled:active'],
+    styles: [
+      {
+        property: 'background-color',
+        value: 'color-mix(in lab, currentColor 20%, transparent)',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option:disabled'],
+    styles: [
+      {
+        property: 'color',
+        value: 'color-mix(in lab, currentColor 50%, transparent)',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option'],
+    styles: [
+      {
+        property: 'min-inline-size',
+        value: '24px',
+      },
+      {
+        property: 'min-block-size',
+        value: 'max(24px, 1lh)',
+      },
+      {
+        property: 'padding-inline',
+        value: '0.5em',
+      },
+      {
+        property: 'padding-block-end',
+        value: '0',
+      },
+      {
+        property: 'display',
+        value: 'flex',
+      },
+      {
+        property: 'align-items',
+        value: 'center',
+      },
+      {
+        property: 'gap',
+        value: '0.5em',
+      },
+      {
+        property: 'white-space',
+        value: 'nowrap',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option::checkmark'],
+    styles: [
+      {
+        property: 'content',
+        value: "'\\2713' / ''",
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select option:not(:checked)::checkmark'],
+    styles: [
+      {
+        property: 'visibility',
+        value: 'hidden',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select optgroup'],
+    styles: [
+      {
+        property: 'font-weight',
+        value: 'bolder',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select optgroup option'],
+    styles: [
+      {
+        property: 'font-weight',
+        value: 'normal',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select optgroup legend'],
+    styles: [
+      {
+        property: 'padding-inline',
+        value: '0.5em',
+      },
+      {
+        property: 'min-block-size',
+        value: '1lh',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select'],
+    styles: [
+      {
+        property: 'border-radius',
+        value: '0.5em',
       },
       {
         property: 'padding-block',
@@ -2544,14 +2706,6 @@ export default [
         value: '0.5em',
       },
       {
-        property: 'user-select',
-        value: 'none',
-      },
-      {
-        property: 'box-sizing',
-        value: 'border-box',
-      },
-      {
         property: 'field-sizing',
         value: 'content',
       },
@@ -2573,7 +2727,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['select:enabled:hover', 'select option:enabled:hover'],
+    selectors: ['select:enabled:hover'],
     styles: [
       {
         property: 'background-color',
@@ -2583,7 +2737,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['select:enabled:active', 'select option:enabled:active'],
+    selectors: ['select::enabled:active'],
     styles: [
       {
         property: 'background-color',
@@ -2593,7 +2747,7 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['select:disabled', 'select option:disabled'],
+    selectors: ['select:disabled'],
     styles: [
       {
         property: 'color',
@@ -2662,64 +2816,6 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['select option'],
-    styles: [
-      {
-        property: 'min-inline-size',
-        value: '24px',
-      },
-      {
-        property: 'min-block-size',
-        value: 'max(24px, 1lh)',
-      },
-      {
-        property: 'padding-inline',
-        value: '0.5em',
-      },
-      {
-        property: 'padding-block-end',
-        value: '0',
-      },
-      {
-        property: 'display',
-        value: 'flex',
-      },
-      {
-        property: 'align-items',
-        value: 'center',
-      },
-      {
-        property: 'gap',
-        value: '0.5em',
-      },
-      {
-        property: 'white-space',
-        value: 'nowrap',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
-    selectors: ['select option::checkmark'],
-    styles: [
-      {
-        property: 'content',
-        value: "'\\2713' / ''",
-      },
-    ],
-  },
-  {
-    type: 'Styles',
-    selectors: ['select option:not(:checked)::checkmark'],
-    styles: [
-      {
-        property: 'visibility',
-        value: 'hidden',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
     selectors: ['select::picker-icon'],
     styles: [
       {
@@ -2738,35 +2834,19 @@ export default [
   },
   {
     type: 'Styles',
-    selectors: ['select optgroup'],
+    selectors: ['select'],
     styles: [
       {
-        property: 'font-weight',
-        value: 'bolder',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
-    selectors: ['select optgroup option'],
-    styles: [
-      {
-        property: 'font-weight',
-        value: 'normal',
-      },
-    ],
-  },
-  {
-    type: 'Styles',
-    selectors: ['select optgroup legend'],
-    styles: [
-      {
-        property: 'padding-inline',
-        value: '0.5em',
+        property: 'overflow',
+        value: 'auto',
       },
       {
-        property: 'min-block-size',
-        value: '1lh',
+        property: 'display',
+        value: 'inline-block',
+      },
+      {
+        property: 'block-size',
+        value: 'calc(max(24px, 1lh) * attr(size type(<integer>), 4))',
       },
     ],
   },
