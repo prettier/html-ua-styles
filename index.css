@@ -906,12 +906,17 @@ table {
 }
 
 input,
-select,
 button,
 textarea {
   letter-spacing: initial;
   word-spacing: initial;
   line-height: initial;
+}
+
+input,
+select,
+button,
+textarea {
   text-transform: initial;
   text-indent: initial;
   text-shadow: initial;
@@ -1136,11 +1141,65 @@ progress {
 }
 
 select {
-  text-transform: initial;
-  text-align: initial;
-  text-indent: initial;
+  letter-spacing: initial;
+  word-spacing: initial;
+  line-height: initial;
+}
+
+select {
+  display: inline-block;
+}
+
+select {
   background-color: transparent;
   border: 1px solid currentColor;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+select option:enabled:hover {
+  background-color: color-mix(in lab, currentColor 10%, transparent);
+}
+select option:enabled:active {
+  background-color: color-mix(in lab, currentColor 20%, transparent);
+}
+select option:disabled {
+  color: color-mix(in lab, currentColor 50%, transparent);
+}
+
+select option {
+  min-inline-size: 24px;
+  min-block-size: max(24px, 1lh);
+  padding-inline: 0.5em;
+  padding-block-end: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  white-space: nowrap;
+}
+
+select option::checkmark {
+  content: "\2713" / "";
+}
+select option:not(:checked)::checkmark {
+  visibility: hidden;
+}
+
+select optgroup {
+  font-weight: bolder;
+}
+
+select optgroup option {
+  font-weight: normal;
+}
+
+select optgroup legend {
+  padding-inline: 0.5em;
+  min-block-size: 1lh;
+}
+
+select {
+  border-radius: 0.5em;
   padding-block: 0.25em;
   padding-inline: 0.5em;
   min-block-size: calc-size(auto, max(size, 24px, 1lh));
@@ -1148,8 +1207,6 @@ select {
   display: inline-flex;
   gap: 0.5em;
   border-radius: 0.5em;
-  user-select: none;
-  box-sizing: border-box;
   field-sizing: content !important;
 }
 
@@ -1158,16 +1215,13 @@ select > button:first-child {
   display: contents;
 }
 
-select:enabled:hover,
-select option:enabled:hover {
+select:enabled:hover {
   background-color: color-mix(in lab, currentColor 10%, transparent);
 }
-select:enabled:active,
-select option:enabled:active {
+select::enabled:active {
   background-color: color-mix(in lab, currentColor 20%, transparent);
 }
-select:disabled,
-select option:disabled {
+select:disabled {
   color: color-mix(in lab, currentColor 50%, transparent);
 }
 
@@ -1190,39 +1244,14 @@ select option:disabled {
     block-start span-inline-start;
 }
 
-select option {
-  min-inline-size: 24px;
-  min-block-size: max(24px, 1lh);
-  padding-inline: 0.5em;
-  padding-block-end: 0;
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  white-space: nowrap;
-}
-
-select option::checkmark {
-  content: "\2713" / "";
-}
-select option:not(:checked)::checkmark {
-  visibility: hidden;
-}
-
 select::picker-icon {
   content: counter(fake-counter-name, disclosure-open);
   display: block;
   margin-inline-start: auto;
 }
 
-select optgroup {
-  font-weight: bolder;
-}
-
-select optgroup option {
-  font-weight: normal;
-}
-
-select optgroup legend {
-  padding-inline: 0.5em;
-  min-block-size: 1lh;
+select {
+  overflow: auto;
+  display: inline-block;
+  block-size: calc(max(24px, 1lh) * attr(size type(<integer>), 4));
 }
