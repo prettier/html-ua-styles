@@ -54,12 +54,21 @@ class Stylesheet {
 
   // eslint-disable-next-line class-methods-use-this
   #stringifyDeclaration(node) {
-    const { property, important, value } = node;
+    const { property, important, value: valueNode } = node;
 
     assertNodeType(node, 'Declaration');
-    assertNodeType(value, 'Raw');
+    assertNodeType(valueNode, 'Raw');
 
-    const style = { property, value: value.value };
+    let { value } = valueNode;
+
+    if (property === 'position-try-fallbacks') {
+      value = value
+        .split(',')
+        .map((part) => part.trim())
+        .join(', ');
+    }
+
+    const style = { property, value: value };
 
     if (important) {
       node.important = true;

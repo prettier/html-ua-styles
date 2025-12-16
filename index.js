@@ -2810,7 +2810,7 @@ export default [
       {
         property: 'position-try-fallbacks',
         value:
-          'block-start span-inline-end,\n    block-end span-inline-start,\n    block-start span-inline-start',
+          'block-start span-inline-end, block-end span-inline-start, block-start span-inline-start',
       },
     ],
   },
