@@ -891,6 +891,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sindresorhus/merge-streams@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@sindresorhus/merge-streams@npm:4.0.0"
+  checksum: 10/16551c787f5328c8ef05fd9831ade64369ccc992df78deb635ec6c44af217d2f1b43f8728c348cdc4e00585ff2fad6e00d8155199cbf6b154acc45fe65cbf0aa
+  languageName: node
+  linkType: hard
+
 "@stylistic/eslint-plugin@npm:5.2.2":
   version: 5.2.2
   resolution: "@stylistic/eslint-plugin@npm:5.2.2"
@@ -2831,7 +2838,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:14.1.0, globby@npm:^14.0.2":
+"globby@npm:15.0.0":
+  version: 15.0.0
+  resolution: "globby@npm:15.0.0"
+  dependencies:
+    "@sindresorhus/merge-streams": "npm:^4.0.0"
+    fast-glob: "npm:^3.3.3"
+    ignore: "npm:^7.0.5"
+    path-type: "npm:^6.0.0"
+    slash: "npm:^5.1.0"
+    unicorn-magic: "npm:^0.3.0"
+  checksum: 10/552203c6350bd1be0c472006298305290c489e525dc9e7f6cf43634194714ddcdec1a130a2ea91e31de0c676ef91d1cdefa24e48dc0590e7bb8261f92d716731
+  languageName: node
+  linkType: hard
+
+"globby@npm:^14.0.2":
   version: 14.1.0
   resolution: "globby@npm:14.1.0"
   dependencies:
@@ -2961,7 +2982,7 @@ __metadata:
     eslint: "npm:9.35.0"
     husky: "npm:9.1.7"
     lint-staged: "npm:16.1.6"
-    markdownlint-cli2: "npm:0.18.1"
+    markdownlint-cli2: "npm:0.20.0"
     npm-run-all: "npm:4.1.5"
     prettier: "npm:3.7.4"
     release-it: "npm:19.1.0"
@@ -3043,7 +3064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ignore@npm:^7.0.3":
+"ignore@npm:^7.0.3, ignore@npm:^7.0.5":
   version: 7.0.5
   resolution: "ignore@npm:7.0.5"
   checksum: 10/f134b96a4de0af419196f52c529d5c6120c4456ff8a6b5a14ceaaa399f883e15d58d2ce651c9b69b9388491d4669dda47285d307e827de9304a53a1824801bc6
@@ -3537,14 +3558,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:4.1.0, js-yaml@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "js-yaml@npm:4.1.0"
+"js-yaml@npm:4.1.1, js-yaml@npm:^4.1.0":
+  version: 4.1.1
+  resolution: "js-yaml@npm:4.1.1"
   dependencies:
     argparse: "npm:^2.0.1"
   bin:
     js-yaml: bin/js-yaml.js
-  checksum: 10/c138a34a3fd0d08ebaf71273ad4465569a483b8a639e0b118ff65698d257c2791d3199e3f303631f2cb98213fa7b5f5d6a4621fd0fff819421b990d30d967140
+  checksum: 10/a52d0519f0f4ef5b4adc1cde466cb54c50d56e2b4a983b9d5c9c0f2f99462047007a6274d7e95617a21d3c91fde3ee6115536ed70991cd645ba8521058b78f77
   languageName: node
   linkType: hard
 
@@ -3841,35 +3862,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2-formatter-default@npm:0.0.5":
-  version: 0.0.5
-  resolution: "markdownlint-cli2-formatter-default@npm:0.0.5"
+"markdownlint-cli2-formatter-default@npm:0.0.6":
+  version: 0.0.6
+  resolution: "markdownlint-cli2-formatter-default@npm:0.0.6"
   peerDependencies:
     markdownlint-cli2: ">=0.0.4"
-  checksum: 10/b99828fb295e96ba30fbc365c363e8811ffa70f2334d3ecad04bc1396f6c19c33448da76019f90f523415e7ae557d1be381ceb77a03590c9017d355b7cbab277
+  checksum: 10/5d6fe41a750b6d35058a53566269d049725ea3cfcf8709874a75bc4cfc02a2ec91b0258e3df5d019ee116b97b127c3dd906cf2d095483131e725737f113f3c8d
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:0.18.1":
-  version: 0.18.1
-  resolution: "markdownlint-cli2@npm:0.18.1"
+"markdownlint-cli2@npm:0.20.0":
+  version: 0.20.0
+  resolution: "markdownlint-cli2@npm:0.20.0"
   dependencies:
-    globby: "npm:14.1.0"
-    js-yaml: "npm:4.1.0"
+    globby: "npm:15.0.0"
+    js-yaml: "npm:4.1.1"
     jsonc-parser: "npm:3.3.1"
     markdown-it: "npm:14.1.0"
-    markdownlint: "npm:0.38.0"
-    markdownlint-cli2-formatter-default: "npm:0.0.5"
+    markdownlint: "npm:0.40.0"
+    markdownlint-cli2-formatter-default: "npm:0.0.6"
     micromatch: "npm:4.0.8"
   bin:
     markdownlint-cli2: markdownlint-cli2-bin.mjs
-  checksum: 10/ad1d70d9226a81730b0a5a99ed223936fe134801229843de58094fc93c2e8a8d6baf6f386f374d6fb7d6868663dde62a4705e1c3fc5fde764d34a06ff77eb8d2
+  checksum: 10/5cc34249e9ed261c285a95376d2dee114b759312df4ee02889fc956d959914769dc2481ed704b36bef69325ab789e8511cf1c946ceeeb9fd06ad2b518760f672
   languageName: node
   linkType: hard
 
-"markdownlint@npm:0.38.0":
-  version: 0.38.0
-  resolution: "markdownlint@npm:0.38.0"
+"markdownlint@npm:0.40.0":
+  version: 0.40.0
+  resolution: "markdownlint@npm:0.40.0"
   dependencies:
     micromark: "npm:4.0.2"
     micromark-core-commonmark: "npm:2.0.3"
@@ -3879,7 +3900,8 @@ __metadata:
     micromark-extension-gfm-table: "npm:2.1.1"
     micromark-extension-math: "npm:3.1.0"
     micromark-util-types: "npm:2.0.2"
-  checksum: 10/294f575fb030210fdc9b79a370eb76506ba793cc2732bb6ed6eb0c25affc521e4362a4eaee8d7dc3d10a2ea5ced1f223c4412a6cd4972cfc84975ce9b4a56dbd
+    string-width: "npm:8.1.0"
+  checksum: 10/f487c9ab083e1f3699a16f934cf8134e8583135cadb29fe460ec5128a35a72fc6a4be8ddc967e10f2c4ea56439704a419231208d028eaf21b478c5b8623d2e20
   languageName: node
   linkType: hard
 
@@ -5498,6 +5520,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"string-width@npm:8.1.0, string-width@npm:^8.0.0, string-width@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "string-width@npm:8.1.0"
+  dependencies:
+    get-east-asian-width: "npm:^1.3.0"
+    strip-ansi: "npm:^7.1.0"
+  checksum: 10/51ee97c4ffee7b94f8a2ee785fac14f81ec9809b9fcec9a4db44e25c717c263af0cc4387c111aef76195c0718dc43766f3678c07fb542294fb0244f7bfbde883
+  languageName: node
+  linkType: hard
+
 "string-width@npm:^4.1.0":
   version: 4.2.3
   resolution: "string-width@npm:4.2.3"
@@ -5517,16 +5549,6 @@ __metadata:
     get-east-asian-width: "npm:^1.0.0"
     strip-ansi: "npm:^7.1.0"
   checksum: 10/bc0de5700a2690895169fce447ec4ed44bc62de80312c2093d5606bfd48319bb88e48a99e97f269dff2bc9577448b91c26b3804c16e7d9b389699795e4655c3b
-  languageName: node
-  linkType: hard
-
-"string-width@npm:^8.0.0, string-width@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "string-width@npm:8.1.0"
-  dependencies:
-    get-east-asian-width: "npm:^1.3.0"
-    strip-ansi: "npm:^7.1.0"
-  checksum: 10/51ee97c4ffee7b94f8a2ee785fac14f81ec9809b9fcec9a4db44e25c717c263af0cc4387c111aef76195c0718dc43766f3678c07fb542294fb0244f7bfbde883
   languageName: node
   linkType: hard
 
