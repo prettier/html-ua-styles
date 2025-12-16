@@ -17,10 +17,10 @@ jobs:
       YARN_ENABLE_IMMUTABLE_INSTALLS: false
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
 
       - name: Install Dependencies
         run: yarn
@@ -29,7 +29,7 @@ jobs:
         run: yarn build
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: Update data
           branch: automated-update
