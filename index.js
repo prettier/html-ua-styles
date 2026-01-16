@@ -200,8 +200,24 @@ export default [
         value: 'absolute',
       },
       {
-        property: 'justify-self',
-        value: 'dialog',
+        property: 'inset-inline-start',
+        value: '0',
+      },
+      {
+        property: 'inset-inline-end',
+        value: '0',
+      },
+      {
+        property: 'width',
+        value: 'fit-content',
+      },
+      {
+        property: 'height',
+        value: 'fit-content',
+      },
+      {
+        property: 'margin',
+        value: 'auto',
       },
       {
         property: 'border',
@@ -230,12 +246,12 @@ export default [
         value: 'fixed',
       },
       {
-        property: 'place-self',
-        value: 'dialog',
-      },
-      {
         property: 'overflow',
         value: 'auto',
+      },
+      {
+        property: 'inset-block',
+        value: '0',
       },
       {
         property: 'max-width',
@@ -286,8 +302,20 @@ export default [
         value: 'fixed',
       },
       {
-        property: 'place-self',
-        value: 'dialog',
+        property: 'inset',
+        value: '0',
+      },
+      {
+        property: 'width',
+        value: 'fit-content',
+      },
+      {
+        property: 'height',
+        value: 'fit-content',
+      },
+      {
+        property: 'margin',
+        value: 'auto',
       },
       {
         property: 'border',
