@@ -2581,7 +2581,7 @@ export default [
     styles: [
       {
         property: 'background-color',
-        value: 'color-mix(in lab, currentColor 10%, transparent)',
+        value: 'color-mix(currentColor 10%, transparent)',
       },
     ],
   },
@@ -2591,7 +2591,7 @@ export default [
     styles: [
       {
         property: 'background-color',
-        value: 'color-mix(in lab, currentColor 20%, transparent)',
+        value: 'color-mix(currentColor 20%, transparent)',
       },
     ],
   },
@@ -2601,7 +2601,7 @@ export default [
     styles: [
       {
         property: 'color',
-        value: 'color-mix(in lab, currentColor 50%, transparent)',
+        value: 'color-mix(currentColor 50%, transparent)',
       },
     ],
   },
@@ -2667,6 +2667,10 @@ export default [
     type: 'Styles',
     selectors: ['select optgroup'],
     styles: [
+      {
+        property: 'display',
+        value: 'block',
+      },
       {
         property: 'font-weight',
         value: 'bolder',
@@ -2759,17 +2763,17 @@ export default [
     styles: [
       {
         property: 'background-color',
-        value: 'color-mix(in lab, currentColor 10%, transparent)',
+        value: 'color-mix(currentColor 10%, transparent)',
       },
     ],
   },
   {
     type: 'Styles',
-    selectors: ['select::enabled:active'],
+    selectors: ['select:enabled:active'],
     styles: [
       {
         property: 'background-color',
-        value: 'color-mix(in lab, currentColor 20%, transparent)',
+        value: 'color-mix(currentColor 20%, transparent)',
       },
     ],
   },
@@ -2779,7 +2783,7 @@ export default [
     styles: [
       {
         property: 'color',
-        value: 'color-mix(in lab, currentColor 50%, transparent)',
+        value: 'color-mix(currentColor 50%, transparent)',
       },
     ],
   },
