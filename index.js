@@ -2833,7 +2833,7 @@ export default [
       },
       {
         property: 'position-area',
-        value: 'block-end span-inline-end',
+        value: 'self-block-end span-self-inline-end',
       },
       {
         property: 'position-try-order',
@@ -2842,7 +2842,7 @@ export default [
       {
         property: 'position-try-fallbacks',
         value:
-          'block-start span-inline-end, block-end span-inline-start, block-start span-inline-start',
+          'self-block-start span-self-inline-end, self-block-end span-self-inline-start, self-block-start span-self-inline-start',
       },
     ],
   },

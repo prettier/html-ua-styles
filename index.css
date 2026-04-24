@@ -1244,12 +1244,12 @@ select:disabled {
   min-inline-size: anchor-size(self-inline);
   max-block-size: stretch;
   overflow: auto;
-  position-area: block-end span-inline-end;
+  position-area: self-block-end span-self-inline-end;
   position-try-order: most-block-size;
   position-try-fallbacks:
-    block-start span-inline-end,
-    block-end span-inline-start,
-    block-start span-inline-start;
+    self-block-start span-self-inline-end,
+    self-block-end span-self-inline-start,
+    self-block-start span-self-inline-start;
 }
 
 select::picker-icon {
