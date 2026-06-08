@@ -2022,7 +2022,7 @@ export default [
   {
     type: 'Styles',
     selectors: [
-      'input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i])',
+      'input:not([type="range" i], [type="checkbox" i], [type="radio" i])',
     ],
     styles: [
       {
@@ -2032,6 +2032,16 @@ export default [
       {
         property: 'overflow-clip-margin',
         value: '0',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['input[type="image" i]'],
+    styles: [
+      {
+        property: 'overflow-clip-margin',
+        value: 'content-box',
       },
     ],
   },
