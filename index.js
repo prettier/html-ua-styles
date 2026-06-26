@@ -2537,6 +2537,30 @@ export default [
   },
   {
     type: 'Styles',
+    selectors: ['option'],
+    styles: [
+      {
+        property: 'display',
+        value: 'block',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['optgroup'],
+    styles: [
+      {
+        property: 'display',
+        value: 'block',
+      },
+      {
+        property: 'font-weight',
+        value: 'bolder',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
     selectors: ['select'],
     styles: [
       {
