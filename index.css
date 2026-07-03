@@ -1146,6 +1146,15 @@ progress {
   appearance: auto;
 }
 
+option {
+  display: block;
+}
+
+optgroup {
+  display: block;
+  font-weight: bolder;
+}
+
 select {
   letter-spacing: initial;
   word-spacing: initial;
