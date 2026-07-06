@@ -40,7 +40,7 @@
     "lint:markdown": "markdownlint-cli2",
     "lint:package-json": "yarn run fix:package-json --check",
     "lint:prettier": "prettier . --check",
-    "release": "run-s clean dist",
+    "release": "run-s dist",
     "update": "node ./scripts/update.js"
   },
   "devDependencies": {
