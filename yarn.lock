@@ -1048,7 +1048,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-regex@npm:^6.0.1":
+"ansi-regex@npm:^6.0.1, ansi-regex@npm:^6.2.2":
   version: 6.2.2
   resolution: "ansi-regex@npm:6.2.2"
   checksum: 10/9b17ce2c6daecc75bcd5966b9ad672c23b184dc3ed9bf3c98a0702f0d2f736c15c10d461913568f2cf527a5e64291c7473358885dd493305c84a1cfed66ba94f
@@ -2678,6 +2678,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"get-east-asian-width@npm:^1.5.0":
+  version: 1.6.0
+  resolution: "get-east-asian-width@npm:1.6.0"
+  checksum: 10/3e5370b5df1f0020db711d8a3f9ee2cbfc9c7542daa99a699e9d7b9acf66e7868b89084741565a45d30d80afedf6e1218e0fb8bef7a583924a449c2816777380
+  languageName: node
+  linkType: hard
+
 "get-intrinsic@npm:^1.2.4, get-intrinsic@npm:^1.2.5, get-intrinsic@npm:^1.2.6, get-intrinsic@npm:^1.2.7, get-intrinsic@npm:^1.3.0":
   version: 1.3.1
   resolution: "get-intrinsic@npm:1.3.1"
@@ -2971,10 +2978,10 @@ __metadata:
     css-what: "npm:8.0.0"
     del-cli: "npm:7.0.0"
     eslint: "npm:9.39.4"
-    markdownlint-cli2: "npm:0.22.1"
+    markdownlint-cli2: "npm:0.23.0"
     npm-run-all: "npm:4.1.5"
-    prettier: "npm:3.8.3"
-    release-it: "npm:20.2.0"
+    prettier: "npm:3.9.4"
+    release-it: "npm:20.2.1"
     sort-package-json: "npm:4.0.0"
     write-prettier-file: "npm:3.0.3"
   languageName: unknown
@@ -3496,14 +3503,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:4.1.1":
-  version: 4.1.1
-  resolution: "js-yaml@npm:4.1.1"
+"js-yaml@npm:5.2.0":
+  version: 5.2.0
+  resolution: "js-yaml@npm:5.2.0"
   dependencies:
     argparse: "npm:^2.0.1"
   bin:
-    js-yaml: bin/js-yaml.js
-  checksum: 10/a52d0519f0f4ef5b4adc1cde466cb54c50d56e2b4a983b9d5c9c0f2f99462047007a6274d7e95617a21d3c91fde3ee6115536ed70991cd645ba8521058b78f77
+    js-yaml: bin/js-yaml.mjs
+  checksum: 10/8a5e55c5d0fcafae4ac02114a99dc070048b8e5a82a056089ce1f69f8a00fd8eb05b622e76ad50aac1f9d409010636c9616c6b2ed4e58dae138379a60d301220
   languageName: node
   linkType: hard
 
@@ -3622,12 +3629,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"linkify-it@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "linkify-it@npm:5.0.0"
+"linkify-it@npm:^5.0.1":
+  version: 5.0.2
+  resolution: "linkify-it@npm:5.0.2"
   dependencies:
     uc.micro: "npm:^2.0.0"
-  checksum: 10/ef3b7609dda6ec0c0be8a7b879cea195f0d36387b0011660cd6711bba0ad82137f59b458b7e703ec74f11d88e7c1328e2ad9b855a8500c0ded67461a8c4519e6
+  checksum: 10/1d23387319c15f2c3d41cdada0fc2edac73afb6083e967ee051afc826f7d8d9f920e287fb7c32679b4516f60e6450853dee2b4339d7d2f313222e4b9e5be1476
   languageName: node
   linkType: hard
 
@@ -3727,19 +3734,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it@npm:14.1.1":
-  version: 14.1.1
-  resolution: "markdown-it@npm:14.1.1"
+"markdown-it@npm:14.2.0":
+  version: 14.2.0
+  resolution: "markdown-it@npm:14.2.0"
   dependencies:
     argparse: "npm:^2.0.1"
     entities: "npm:^4.4.0"
-    linkify-it: "npm:^5.0.0"
+    linkify-it: "npm:^5.0.1"
     mdurl: "npm:^2.0.0"
     punycode.js: "npm:^2.3.1"
     uc.micro: "npm:^2.1.0"
   bin:
     markdown-it: bin/markdown-it.mjs
-  checksum: 10/088822c8aa9346ba4af6a205f6ee0f4baae55e3314f040dc5c28c897d57d0f979840c71872b3582a6a6e572d8c851c54e323c82f4559011dfa2e96224fc20fc2
+  checksum: 10/f5cdb7ca9c8115114137201590b2697ee6ca69d2d4701a0313696629d5de4022525eedcad31800263c70f04dfba0a8eae835b6aa84b65e94ae32d63d04e66211
   languageName: node
   linkType: hard
 
@@ -3752,28 +3759,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:0.22.1":
-  version: 0.22.1
-  resolution: "markdownlint-cli2@npm:0.22.1"
+"markdownlint-cli2@npm:0.23.0":
+  version: 0.23.0
+  resolution: "markdownlint-cli2@npm:0.23.0"
   dependencies:
     globby: "npm:16.2.0"
-    js-yaml: "npm:4.1.1"
+    js-yaml: "npm:5.2.0"
     jsonc-parser: "npm:3.3.1"
     jsonpointer: "npm:5.0.1"
-    markdown-it: "npm:14.1.1"
-    markdownlint: "npm:0.40.0"
+    markdown-it: "npm:14.2.0"
+    markdownlint: "npm:0.41.0"
     markdownlint-cli2-formatter-default: "npm:0.0.6"
     micromatch: "npm:4.0.8"
-    smol-toml: "npm:1.6.1"
+    smol-toml: "npm:1.7.0"
   bin:
     markdownlint-cli2: markdownlint-cli2-bin.mjs
-  checksum: 10/0097f97d6f5ae1b41babab18eb873db5773fc953324af527a3b4916655aced176eacdb2015afc57b23a7ea75bd05237d3c827890c39d86c5b2e270f4adef77b2
+  checksum: 10/5d635f49bac0ac96fe45d4046468c190b73ed77ca267a6b81294975f23490bfb2b991aee4935bff02d2e083e2aa2de64ae5d54a739d354ff548bf97ca26f846c
   languageName: node
   linkType: hard
 
-"markdownlint@npm:0.40.0":
-  version: 0.40.0
-  resolution: "markdownlint@npm:0.40.0"
+"markdownlint@npm:0.41.0":
+  version: 0.41.0
+  resolution: "markdownlint@npm:0.41.0"
   dependencies:
     micromark: "npm:4.0.2"
     micromark-core-commonmark: "npm:2.0.3"
@@ -3783,8 +3790,8 @@ __metadata:
     micromark-extension-gfm-table: "npm:2.1.1"
     micromark-extension-math: "npm:3.1.0"
     micromark-util-types: "npm:2.0.2"
-    string-width: "npm:8.1.0"
-  checksum: 10/f487c9ab083e1f3699a16f934cf8134e8583135cadb29fe460ec5128a35a72fc6a4be8ddc967e10f2c4ea56439704a419231208d028eaf21b478c5b8623d2e20
+    string-width: "npm:8.2.1"
+  checksum: 10/a815d0405fb9659dda9c7eabea7da8c27980a241f967e5f46f8110411a4cff89bb42f3d0bc17661f1beac1e563986943811642c753ffd9ec642348d5b698b2ec
   languageName: node
   linkType: hard
 
@@ -4718,12 +4725,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.8.3":
-  version: 3.8.3
-  resolution: "prettier@npm:3.8.3"
+"prettier@npm:3.9.4":
+  version: 3.9.4
+  resolution: "prettier@npm:3.9.4"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10/4b3b12cbb29e4c96bed936e5d070167552500c18d37676fb3e0caae6199c42860662608e4dc116230698f6e2bb0267ef2548158224c92d40f188d309d72fdd6f
+  checksum: 10/4a0dc4389d442f5aca0beb12778c90b6ceb9831940b01a1df5eba9150b5ce96fa52eda9074a10a370e732adc03e2f645597dfd8b7e3f1e94dee28df01004a0fd
   languageName: node
   linkType: hard
 
@@ -4882,9 +4889,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"release-it@npm:20.2.0":
-  version: 20.2.0
-  resolution: "release-it@npm:20.2.0"
+"release-it@npm:20.2.1":
+  version: 20.2.1
+  resolution: "release-it@npm:20.2.1"
   dependencies:
     "@inquirer/prompts": "npm:8.4.2"
     "@octokit/rest": "npm:22.0.1"
@@ -4905,13 +4912,13 @@ __metadata:
     proxy-agent: "npm:7.0.0"
     semver: "npm:7.7.4"
     tinyglobby: "npm:0.2.15"
-    undici: "npm:7.24.5"
+    undici: "npm:7.28.0"
     url-join: "npm:5.0.0"
     wildcard-match: "npm:5.1.4"
     yargs-parser: "npm:22.0.0"
   bin:
     release-it: bin/release-it.js
-  checksum: 10/063f8b050ebc2856aedde3ee663f1aec3aa112f415cd45eafa1c5a763abd6e72b4e988e2339c444dfa4b0d55b5bf0e8a0cb6cddd5b8055a6cb0a6bf575746f69
+  checksum: 10/b68be8612c3075a24ba7c737d4b2c9676007f9c9f587facf34da6864ef84c3c23442059539f1e2323bad201972b1db987209eb7b4f54532336918bd8d4dc99a6
   languageName: node
   linkType: hard
 
@@ -5237,10 +5244,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"smol-toml@npm:1.6.1":
-  version: 1.6.1
-  resolution: "smol-toml@npm:1.6.1"
-  checksum: 10/9a0d86cc7f8abef429c915b373b9a1f369fe57a87efbbec46b967fb41dc28af753a2fa62c9c4848907c3b47c282be15c8854aa4e2942ef1fa86ff95a76d13856
+"smol-toml@npm:1.7.0":
+  version: 1.7.0
+  resolution: "smol-toml@npm:1.7.0"
+  checksum: 10/b99829e4d9b357f5841eca9d9bcedbb5cb8421645d698b9d41a49cd97d039d747b92a9882efe640d7cc9a9fd1da8862ce7352e5d59ae097f8a9d3a0a56792e8d
   languageName: node
   linkType: hard
 
@@ -5354,7 +5361,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:8.1.0, string-width@npm:^8.1.0":
+"string-width@npm:8.2.1":
+  version: 8.2.1
+  resolution: "string-width@npm:8.2.1"
+  dependencies:
+    get-east-asian-width: "npm:^1.5.0"
+    strip-ansi: "npm:^7.1.2"
+  checksum: 10/cfadcc454b357d1a2ef88afb85068c7605900c9920362a16df9b4c320cf411983cee51b9832b70772d138674c2851d506f39c7e669c961a1cdd1258207580805
+  languageName: node
+  linkType: hard
+
+"string-width@npm:^8.1.0":
   version: 8.1.0
   resolution: "string-width@npm:8.1.0"
   dependencies:
@@ -5420,6 +5437,15 @@ __metadata:
   dependencies:
     ansi-regex: "npm:^6.0.1"
   checksum: 10/db0e3f9654e519c8a33c50fc9304d07df5649388e7da06d3aabf66d29e5ad65d5e6315d8519d409c15b32fa82c1df7e11ed6f8cd50b0e4404463f0c9d77c8d0b
+  languageName: node
+  linkType: hard
+
+"strip-ansi@npm:^7.1.2":
+  version: 7.2.0
+  resolution: "strip-ansi@npm:7.2.0"
+  dependencies:
+    ansi-regex: "npm:^6.2.2"
+  checksum: 10/96da3bc6d73cfba1218625a3d66cf7d37a69bf0920d8735b28f9eeaafcdb6c1fe8440e1ae9eb1ba0ca355dbe8702da872e105e2e939fa93e7851b3cb5dd7d316
   languageName: node
   linkType: hard
 
@@ -5628,10 +5654,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:7.24.5":
-  version: 7.24.5
-  resolution: "undici@npm:7.24.5"
-  checksum: 10/1eef66817e5bd1ee6ba908553452e8e23c6b743221f8435e838a87fcec84db901ad9bca5853e7a6e123520abd8d3dd03215b19bf57c2ffb114bfeb0b7c206027
+"undici@npm:7.28.0":
+  version: 7.28.0
+  resolution: "undici@npm:7.28.0"
+  checksum: 10/154423b280d623278a61decb437f8a7e581fb18b8c95556ef956b32a58cd668eadbb812d28e20678cb2dc545a566f35a3afc0962307ca801da30f4741117986d
   languageName: node
   linkType: hard
 
