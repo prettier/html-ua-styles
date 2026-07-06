@@ -26,7 +26,7 @@
     "index.css"
   ],
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "update": "node ./scripts/update.js",
     "clean": "run-p \"clean:*\"",
     "clean:dist": "del-cli index.js index.css",
     "dist": "run-p \"dist:*\"",
@@ -41,7 +41,7 @@
     "lint:markdown": "markdownlint-cli2",
     "lint:package-json": "yarn run fix:package-json --check",
     "lint:prettier": "prettier . --check",
-    "release": "run-s clean build dist"
+    "release": "run-s clean dist"
   },
   "devDependencies": {
     "@fisker/eslint-config": "15.4.0",
