@@ -47,13 +47,15 @@ async function getStyles() {
   const html = await getStandardHtml();
   const $ = cheerio.load(html);
 
-  return $('pre > code[class="css"]')
-    // eslint-disable-next-line unicorn/prefer-iterator-to-array-at-end -- not an iterator
-    .toArray()
-    .map((codeBlock) => $(codeBlock).text())
-    .filter((style) => style.startsWith(STYLE_NAMESPACE))
-    .map((style) => style.slice(STYLE_NAMESPACE.length).trim())
-    .join('\n'.repeat(2));
+  return (
+    $('pre > code[class="css"]')
+      // eslint-disable-next-line unicorn/prefer-iterator-to-array-at-end -- not an iterator
+      .toArray()
+      .map((codeBlock) => $(codeBlock).text())
+      .filter((style) => style.startsWith(STYLE_NAMESPACE))
+      .map((style) => style.slice(STYLE_NAMESPACE.length).trim())
+      .join('\n'.repeat(2))
+  );
 }
 
 async function build() {
