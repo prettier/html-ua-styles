@@ -48,6 +48,7 @@ async function getStyles() {
   const $ = cheerio.load(html);
 
   return $('pre > code[class="css"]')
+    // eslint-disable-next-line unicorn/prefer-iterator-to-array-at-end -- not an iterator
     .toArray()
     .map((codeBlock) => $(codeBlock).text())
     .filter((style) => style.startsWith(STYLE_NAMESPACE))
