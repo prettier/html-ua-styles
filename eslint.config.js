@@ -5,4 +5,9 @@ export default [
   {
     ignores: ['index.js'],
   },
+  {
+    rules: {
+      'unicorn/consistent-class-member-order': 'off',
+    },
+  },
 ];

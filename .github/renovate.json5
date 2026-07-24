@@ -1,17 +1,14 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   dependencyDashboardApproval: true,
-  postUpdateOptions: ["yarnDedupeHighest"],
-  extends: [
-    ":pinDependencies",
-    ":pinDevDependencies",
-  ],
+  postUpdateOptions: ['yarnDedupeHighest'],
+  extends: [':pinDependencies', ':pinDevDependencies'],
   lockFileMaintenance: { enabled: true },
   packageRules: [
     {
-      groupName: "non-major dev-dependencies",
-      matchDepTypes: ["devDependencies"],
-      matchUpdateTypes: ["minor", "patch"],
+      groupName: 'non-major dev-dependencies',
+      matchDepTypes: ['devDependencies'],
+      matchUpdateTypes: ['minor', 'patch'],
     },
     {
       groupName: 'GitHub Actions',
