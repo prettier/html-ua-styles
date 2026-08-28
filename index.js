@@ -2128,6 +2128,32 @@ export default [
   },
   {
     type: 'Styles',
+    selectors: [
+      'input:not([type="file" i], [type="range" i], [type="checkbox" i], [type="radio" i])',
+    ],
+    styles: [
+      {
+        property: 'align-content',
+        value: 'unsafe center',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: [
+      'button',
+      '::file-selector-button',
+      'input:is([type="color" i], [type="reset" i], [type="button" i], [type="submit" i])',
+    ],
+    styles: [
+      {
+        property: 'align-content',
+        value: 'center',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
     selectors: ['input:not([type="image" i])', 'textarea'],
     styles: [
       {
@@ -2556,6 +2582,16 @@ export default [
       {
         property: 'font-weight',
         value: 'bolder',
+      },
+    ],
+  },
+  {
+    type: 'Styles',
+    selectors: ['select'],
+    styles: [
+      {
+        property: 'align-content',
+        value: 'center',
       },
     ],
   },
