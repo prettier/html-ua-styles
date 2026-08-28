@@ -983,6 +983,26 @@ textarea {
   white-space: pre-wrap;
 }
 
+input:not(
+  [type="file" i],
+  [type="range" i],
+  [type="checkbox" i],
+  [type="radio" i]
+) {
+  align-content: unsafe center;
+}
+
+button,
+::file-selector-button,
+input:is(
+  [type="color" i],
+  [type="reset" i],
+  [type="button" i],
+  [type="submit" i]
+) {
+  align-content: center;
+}
+
 input:not([type="image" i]),
 textarea {
   box-sizing: border-box;
@@ -1153,6 +1173,10 @@ option {
 optgroup {
   display: block;
   font-weight: bolder;
+}
+
+select {
+  align-content: center;
 }
 
 select {
